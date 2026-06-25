@@ -1,0 +1,115 @@
+[gd_scene load_steps=15 format=3 uid="uid://dl1s7yakf5ao3"]
+
+[ext_resource type="Script" uid="uid://dp5gexct6fa3m" path="res://VFX/MyVFX/ArrowTip.gd" id="1_170yl"]
+[ext_resource type="Script" uid="uid://df6sjv6focvge" path="res://VFX/MyVFX/gpu_particles_test.gd" id="1_hwqev"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_57us1"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_57jhh"]
+sky_material = SubResource("ProceduralSkyMaterial_57us1")
+
+[sub_resource type="Environment" id="Environment_ugkh1"]
+background_mode = 2
+sky = SubResource("Sky_57jhh")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hwqev"]
+emission_shape = 1
+emission_sphere_radius = 0.1
+spread = 180.0
+initial_velocity_min = 20.0
+initial_velocity_max = 20.0
+gravity = Vector3(0, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57us1"]
+shading_mode = 0
+albedo_color = Color(0, 0.8, 0.7466667, 1)
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_ugkh1"]
+material = SubResource("StandardMaterial3D_57us1")
+size = Vector2(0.1, 0.1)
+
+[sub_resource type="Curve3D" id="Curve3D_170yl"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 2.142049, -0.048797727, 4.175478, -0.5151825, 4.6372414e-05, 1.0652193, 0.5151825, -4.6372414e-05, -1.0652193, 4.165196, 0.013229966, 2.443775, 0.033583164, -7.6293945e-05, 0.9954587, -0.033583164, 7.6293945e-05, -0.9954587, 4.5495915, -0.02961731, -0.7048576, 0.31973886, -2.2649765e-05, 0.6409725, -0.31973886, 2.2649765e-05, -0.6409725, 4.1967163, 0.031883, -2.4064937, 0.49933386, -4.053116e-06, 0.008906841, -0.49933386, 4.053116e-06, -0.008906841, 2.9085534, 0.6425822, -3.0225523, 0.9047172, 2.849102e-05, -0.46784186, -0.9047172, -2.849102e-05, 0.46784186, 0.505815, 0.52194417, -2.7236502, 0.11496425, -4.720688e-05, -0.67305493, -0.11496425, 4.720688e-05, 0.67305493, -0.8796339, 0.5012679, -0.87677574, -0.18920565, 0.101599455, -0.72919226, 0.18920565, -0.101599455, 0.72919226, -1.1434693, 0.15229392, 2.0749643, -0.5379877, -3.1352043e-05, -0.5912967, 0.5379877, 3.1352043e-05, 0.5912967, -0.47432756, -0.034026265, 3.5335064),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 9
+
+[sub_resource type="Curve" id="Curve_hwqev"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_57us1"]
+curve = SubResource("Curve_hwqev")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_57us1"]
+particle_flag_align_y = true
+emission_shape = 1
+emission_sphere_radius = 0.1
+inherit_velocity_ratio = -0.7
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_57us1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwqev"]
+albedo_color = Color(1, 0.050000012, 0.050000012, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hwqev"]
+material = SubResource("StandardMaterial3D_hwqev")
+radius = 0.05
+height = 0.5
+radial_segments = 16
+rings = 4
+
+[node name="Explosion3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ugkh1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(0.10404264, -0.0028304246, -0.12152002, -5.924968e-10, 0.15995662, -0.003725684, 0.12155298, 0.002422688, 0.104014434, 1.445708, -0.04879774, -3.8882918)
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="CSGBox3D2"]
+transform = Transform3D(0.9999999, 0, 2.9802322e-08, 0, 0.99999994, 1.8626451e-09, 2.9802322e-08, 9.313226e-10, 1, 20.44199, 0.4074319, 17.492472)
+emitting = false
+amount = 1000
+lifetime = 1.5
+one_shot = true
+fixed_fps = 120
+process_material = SubResource("ParticleProcessMaterial_hwqev")
+draw_pass_1 = SubResource("QuadMesh_ugkh1")
+script = ExtResource("1_hwqev")
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_170yl")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(0.40424952, -0.03441128, -0.9139927, 1.862633e-09, 0.9992499, -0.03762373, 0.9146417, 0.015208951, 0.40396267, 2.142049, -0.048797727, 4.175478)
+script = ExtResource("1_170yl")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Path3D/PathFollow3D"]
+emitting = false
+amount = 1000
+lifetime = 0.6
+fixed_fps = 120
+process_material = SubResource("ParticleProcessMaterial_57us1")
+draw_pass_1 = SubResource("CapsuleMesh_hwqev")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Path3D/PathFollow3D"]
+transform = Transform3D(-1.3769087e-08, 0, 0.315, 0, 0.315, 0, -0.315, 0, -1.3769087e-08, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.19937004, -0.62600315, 0.7539043, 0, 0.7693495, 0.6388281, -0.97992426, -0.12736319, 0.15338525, 7.704872, 4.366207, 1.5094315)

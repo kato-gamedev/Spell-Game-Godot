@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://yqyqwmal0c8x"]
+
+[ext_resource type="Script" uid="uid://dl07wigg0oe53" path="res://Script/Character/PracticeDummy.gd" id="1_4i83c"]
+[ext_resource type="PackedScene" uid="uid://bp1obkn4jw2uc" path="res://Asset/dummy.glb" id="1_pwcnh"]
+[ext_resource type="Script" uid="uid://b3iqy3uhtt2a0" path="res://Script/StatSystem/EnemyStat.gd" id="2_14rru"]
+[ext_resource type="PackedScene" uid="uid://mekhukas0mla" path="res://SpellSystem/GAS/HealthBar.tscn" id="2_jupce"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jupce"]
+
+[node name="PracticeDummy" type="CharacterBody3D"]
+collision_layer = 13
+script = ExtResource("1_4i83c")
+
+[node name="EnemyStat" type="Node" parent="."]
+script = ExtResource("2_14rru")
+health = 1000.0
+max_health = 1000.0
+metadata/_custom_type_script = "uid://b3iqy3uhtt2a0"
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_jupce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1885006, 0)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_pwcnh")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0395375, 0)
+shape = SubResource("CapsuleShape3D_jupce")
+
+[connection signal="health_changed" from="EnemyStat" to="." method="_on_enemy_stat_health_changed"]

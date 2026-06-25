@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://d05f5v7vv5yjt"]
+
+[ext_resource type="Script" uid="uid://cdgkik3dwgchu" path="res://Script/Weapon/RecoilGenerator.gd" id="1_ioa4h"]
+
+[sub_resource type="Curve2D" id="Curve2D_fnjqd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 233.99998, 7, 0, 0, 0, 0, 215.99998, 11, 0, 0, 0, 0, 197.99998, 17, 0, 0, 0, 0, 185.99998, 28, 0, 0, 0, 0, 175.99998, 47, 0, 0, 0, 0, 175.99998, 63, 0, 0, 0, 0, 181.99998, 73, 0, 0, 0, 0, 191.99998, 85, 0, 0, 0, 0, 202.99998, 92, 0, 0, 0, 0, 212.99998, 99, 0, 0, 0, 0, 222.99998, 109, 0, 0, 0, 0, 229.99998, 118, 0, 0, 0, 0, 231.99998, 137, 0, 0, 0, 0, 225.99998, 152, 0, 0, 0, 0, 218.99998, 163, 0, 0, 0, 0, 209.99998, 170, 0, 0, 0, 0, 198.99998, 178, 0, 0, 0, 0, 187.99998, 182, 0, 0, 0, 0, 172.99998, 183)
+}
+point_count = 19
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(11.000015, -2)
+scale = Vector2(0.3, 0.3)
+curve = SubResource("Curve2D_fnjqd")
+script = ExtResource("1_ioa4h")
+gdscript_output = "[
+	Vector2(0.0000, 0.0000),
+	Vector2(-0.0906, 0.0201),
+	Vector2(-0.0906, 0.0203),
+	Vector2(-0.0881, 0.0294),
+	Vector2(-0.0881, 0.0294),
+	Vector2(-0.0690, 0.0618),
+	Vector2(-0.0630, 0.0670),
+	Vector2(-0.0432, 0.0822),
+	Vector2(-0.0432, 0.0822),
+	Vector2(-0.0041, 0.0918),
+	Vector2(0.0087, 0.0904),
+	Vector2(0.0478, 0.0796),
+	Vector2(0.0586, 0.0719),
+	Vector2(0.0640, 0.0661),
+	Vector2(0.0783, 0.0499),
+	Vector2(0.0764, 0.0527),
+	Vector2(0.0706, 0.0598),
+	Vector2(0.0656, 0.0657),
+	Vector2(0.0570, 0.0733),
+	Vector2(0.0204, 0.0880),
+	Vector2(0.0097, 0.0923),
+	Vector2(-0.0220, 0.0880),
+	Vector2(-0.0345, 0.0862),
+	Vector2(-0.0495, 0.0785),
+	Vector2(-0.0633, 0.0661),
+	Vector2(-0.0739, 0.0562),
+	Vector2(-0.0751, 0.0546),
+	Vector2(-0.0858, 0.0345),
+	Vector2(-0.0906, 0.0159),
+	Vector2(-0.0926, 0.0062),
+]"

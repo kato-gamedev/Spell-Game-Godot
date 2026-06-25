@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3wcje3eu4pju"]
+
+[ext_resource type="Script" uid="uid://cfcbwshb44npq" path="res://Script/World/Island.gd" id="1_cu23g"]
+[ext_resource type="PackedScene" uid="uid://br1dk0uqixs63" path="res://Map/City in the sky 2 - low.glb" id="2_lyt8j"]
+
+[node name="Island1" type="Node3D"]
+script = ExtResource("1_cu23g")
+low_res_island_path = "uid://br1dk0uqixs63"
+high_res_island_path = "uid://dhn1k80g5j7nh"
+metadata/_custom_type_script = "uid://cfcbwshb44npq"
+
+[node name="City in the sky 2 - low" parent="." instance=ExtResource("2_lyt8j")]

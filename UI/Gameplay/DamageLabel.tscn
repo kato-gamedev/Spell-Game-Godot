@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsbm8o2n444vy"]
+
+[ext_resource type="Script" uid="uid://cp23j5u0clw0a" path="res://UI/Gameplay/DamageLabel.gd" id="1_u0oad"]
+
+[node name="DamageLabel" type="Label3D"]
+pixel_size = 0.001
+billboard = 1
+double_sided = false
+no_depth_test = true
+fixed_size = true
+alpha_antialiasing_mode = 1
+text = "300"
+font_size = 24
+script = ExtResource("1_u0oad")

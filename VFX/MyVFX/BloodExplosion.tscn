@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dofx74fq1bl"]
+
+[ext_resource type="Script" uid="uid://b8vuta647kidg" path="res://Script/VFX/SpawnableVFX.gd" id="1_qgsdd"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qswxw"]
+spread = 180.0
+initial_velocity_min = 3.0
+initial_velocity_max = 5.0
+scale_min = 0.03
+scale_max = 0.049999997
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2gg2"]
+albedo_color = Color(0.6488799, 1.6725436e-06, 7.70092e-07, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_x5wfd"]
+material = SubResource("StandardMaterial3D_q2gg2")
+
+[node name="BloodExplosion" type="Node3D"]
+script = ExtResource("1_qgsdd")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 10
+one_shot = true
+fixed_fps = 100
+process_material = SubResource("ParticleProcessMaterial_qswxw")
+draw_pass_1 = SubResource("SphereMesh_x5wfd")

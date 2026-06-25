@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://mysbtxquwxvl"]
+
+[ext_resource type="Script" uid="uid://csrhvbon56knv" path="res://Script/Character/Character.gd" id="1_wwywm"]
+[ext_resource type="Script" uid="uid://cdi4aemhtdtad" path="res://SpellSystem/GAS/AbilitySystemComponent.gd" id="2_vf46b"]
+[ext_resource type="Script" uid="uid://bmijqxje1i46" path="res://SpellSystem/GAS/HealthBar.gd" id="3_gxgnl"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_8xlge"]
+
+[node name="Character" type="CharacterBody3D"]
+script = ExtResource("1_wwywm")
+metadata/_custom_type_script = "uid://csrhvbon56knv"
+
+[node name="AbilitySystemComponent" type="Node" parent="."]
+script = ExtResource("2_vf46b")
+metadata/_custom_type_script = "uid://cdi4aemhtdtad"
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("3_gxgnl")
+metadata/_custom_type_script = "uid://bmijqxje1i46"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeBlendTree_8xlge")
+anim_player = NodePath("../AnimationPlayer")

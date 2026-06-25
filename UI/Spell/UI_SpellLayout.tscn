@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://bisvrwhyxu54y"]
+
+[ext_resource type="Script" uid="uid://bxieg2nv28oar" path="res://UI/Spell/UI_SpellLayout.gd" id="1_ly0nt"]
+[ext_resource type="PackedScene" uid="uid://byvgymjddhqjp" path="res://UI/Spell/UI_SpellBar.tscn" id="2_lvt0q"]
+[ext_resource type="PackedScene" uid="uid://mu0ri3uwl7n" path="res://UI/Spell/UI_SpellSlot.tscn" id="3_lvt0q"]
+
+[node name="UI_SpellLayout" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ly0nt")
+
+[node name="SpellBar" parent="." instance=ExtResource("2_lvt0q")]
+layout_mode = 1
+anchors_preset = 7
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -106.0
+offset_top = -55.0
+offset_right = 106.0
+offset_bottom = -5.0
+grow_vertical = 0
+
+[node name="AllSpellContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -429.0
+offset_top = -312.0
+offset_right = -109.0
+offset_bottom = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 6
+
+[node name="UI_SpellSlot" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot2" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot3" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot4" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot5" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot6" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot7" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot8" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot9" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot10" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot11" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot12" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2
+
+[node name="UI_SpellSlot13" parent="AllSpellContainer" instance=ExtResource("3_lvt0q")]
+layout_mode = 2

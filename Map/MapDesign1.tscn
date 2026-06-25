@@ -1,0 +1,150 @@
+[gd_scene load_steps=12 format=3 uid="uid://clfq83gpgw840"]
+
+[ext_resource type="Shader" uid="uid://b4f38wk0wktvm" path="res://Shader/BladeRunnerOrange.gdshader" id="1_r5uaj"]
+[ext_resource type="PackedScene" uid="uid://dce6move20l2h" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_1.glb" id="2_1uonu"]
+[ext_resource type="PackedScene" uid="uid://bnbd7pjvp6joq" path="res://Model/PSX Mega Pack II/Models/Structures/water_tower_hm_1.glb" id="3_nu7m3"]
+[ext_resource type="PackedScene" uid="uid://lwhliygc2idy" path="res://Model/PSX Mega Pack II/Models/Buildings/garages_block_hr_1.glb" id="4_5nxja"]
+[ext_resource type="PackedScene" uid="uid://drtbbdky2x2t0" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rtx_1.glb" id="5_ydeig"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hehrj"]
+sky_top_color = Color(0.32337064, 0.3877709, 0.47360456, 1)
+sky_horizon_color = Color(0.65349376, 0.6599257, 0.67051125, 1)
+ground_bottom_color = Color(0.26196653, 0.2232939, 0.17980236, 1)
+ground_horizon_color = Color(0.65349376, 0.6599257, 0.67051125, 1)
+energy_multiplier = 2.15
+
+[sub_resource type="Sky" id="Sky_tdu2o"]
+sky_material = SubResource("ProceduralSkyMaterial_hehrj")
+
+[sub_resource type="Environment" id="Environment_3ws3a"]
+background_mode = 2
+sky = SubResource("Sky_tdu2o")
+fog_enabled = true
+volumetric_fog_enabled = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_bsjva"]
+frequency = 0.0275
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o13n4"]
+noise = SubResource("FastNoiseLite_bsjva")
+seamless = true
+seamless_blend_skirt = 0.3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bu7jo"]
+render_priority = 0
+shader = ExtResource("1_r5uaj")
+shader_parameter/DustColorBright = Color(0.69, 0.4968, 0.3588, 1)
+shader_parameter/DustColorDark = Color(0.5, 0.36433333, 0.315, 1)
+shader_parameter/OverallScale = 0.5
+shader_parameter/StreakStrength = 0.005
+shader_parameter/ClumpStrength = 0.02
+shader_parameter/WindDirection = -0.2
+shader_parameter/NoiseTexture = SubResource("NoiseTexture2D_o13n4")
+
+[node name="PrettyRoom1" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_3ws3a")
+
+[node name="Ground" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 6.29501e-05, -0.00010559682, -6.240139e-05, 0.99998665, 0.0051821508, 0.000105921994, -0.005182144, 0.99998665, -801.251, 1, 8.873)
+use_collision = true
+collision_layer = 33
+size = Vector3(100, 0.5, 100)
+material = SubResource("ShaderMaterial_bu7jo")
+
+[node name="warehouse_mx_1_glb" type="Node3D" parent="." instance=ExtResource("2_1uonu")]
+transform = Transform3D(0.99959785, 0, -0.028357811, 0, 1, 0, 0.028357811, 0, 0.99959785, -778.77264, 0, -23.100464)
+
+[node name="warehouse_mx_1_glb2" type="Node3D" parent="." instance=ExtResource("2_1uonu")]
+transform = Transform3D(-0.99977535, 0, -0.021169174, 0, 1, 0, 0.021169174, 0, -0.99977535, -782.127, 0, 46.506546)
+
+[node name="water_tower_hm_1_glb" type="Node3D" parent="." instance=ExtResource("3_nu7m3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -806.6824, 0, 44.23021)
+
+[node name="garages_block_hr_1_glb" type="Node3D" parent="." instance=ExtResource("4_5nxja")]
+transform = Transform3D(0.03317257, 0, -0.9994497, 0, 1, 0, 0.9994497, 0, 0.03317257, -804.86835, 0, 19.347794)
+
+[node name="garages_block_hr_1_glb2" type="Node3D" parent="." instance=ExtResource("4_5nxja")]
+transform = Transform3D(-0.07812855, 0, -0.9969433, 0, 1, 0, 0.9969433, 0, -0.07812855, -803.18695, 0, -10.759994)
+
+[node name="wall_rtx_1_glb17" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, -1, 3.821371e-15, 8.742278e-08, -3.821371e-15, -1, -762, 0.34244847, 17.99859)
+
+[node name="wall_rtx_1_glb18" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -761, 4, 21)
+
+[node name="wall_rtx_1_glb19" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -765, 4, 21)
+
+[node name="wall_rtx_1_glb20" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -769, 4, 21)
+
+[node name="wall_rtx_1_glb21" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -773, 4.0000005, 21)
+
+[node name="wall_rtx_1_glb22" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777, 4, 21)
+
+[node name="wall_rtx_1_glb23" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -781, 3.9999995, 21)
+
+[node name="wall_rtx_1_glb24" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -761, 4, 10)
+
+[node name="wall_rtx_1_glb25" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -765, 4, 10)
+
+[node name="wall_rtx_1_glb26" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -769, 4, 10)
+
+[node name="wall_rtx_1_glb27" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -773, 4, 10)
+
+[node name="wall_rtx_1_glb28" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777, 4, 10)
+
+[node name="wall_rtx_1_glb29" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -781, 4.000001, 10)
+
+[node name="wall_rtx_1_glb" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -761, 1, 10)
+
+[node name="wall_rtx_1_glb2" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -765, 1, 10)
+
+[node name="wall_rtx_1_glb3" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -769, 1, 10)
+
+[node name="wall_rtx_1_glb4" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -773, 1, 10)
+
+[node name="wall_rtx_1_glb5" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777, 1, 10)
+
+[node name="wall_rtx_1_glb6" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -781, 1, 10)
+
+[node name="wall_rtx_1_glb7" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -761, 1, 21)
+
+[node name="wall_rtx_1_glb8" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -765, 1, 21)
+
+[node name="wall_rtx_1_glb9" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -769, 1, 21)
+
+[node name="wall_rtx_1_glb10" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -773, 1, 21)
+
+[node name="wall_rtx_1_glb11" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777, 1.0000002, 21)
+
+[node name="wall_rtx_1_glb12" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -785, 1, 21)
+
+[node name="wall_rtx_1_glb13" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -781, 1, 21)
+
+[node name="wall_rtx_1_glb14" type="Node3D" parent="." instance=ExtResource("5_ydeig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -785, 1, 10)

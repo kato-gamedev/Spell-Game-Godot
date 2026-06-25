@@ -1,0 +1,10 @@
+[gd_resource type="GradientTexture1D" load_steps=2 format=3 uid="uid://dgr0sijidw74q"]
+
+[sub_resource type="Gradient" id="Gradient_348k6"]
+offsets = PackedFloat32Array(0, 0.111111104, 0.22222221, 0.33333337, 0.44444442, 0.5555556, 0.6666667, 0.7777778, 0.8888889, 1)
+colors = PackedColorArray(0.37254903, 0.050980393, 0, 1, 0.4392157, 0.0627451, 0.003921569, 1, 0.50980395, 0.050980393, 0, 1, 0.53333336, 0.09411765, 0, 1, 0.5921569, 0.14117648, 0, 1, 0.70980394, 0.23921569, 0, 1, 0.7647059, 0.3254902, 0, 1, 0.8862745, 0.42745098, 0, 1, 0.9137255, 0.4627451, 0, 1, 0.9607843, 0.56078434, 0, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 9
+
+[resource]
+gradient = SubResource("Gradient_348k6")

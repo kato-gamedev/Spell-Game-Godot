@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bnn1h2hje12xq"]
+
+[ext_resource type="FontFile" uid="uid://cgbxqonwof6hf" path="res://UI/MobileStyle/VCR_OSD_MONO_1.001.ttf" id="1_2c1pp"]
+
+[resource]
+font = ExtResource("1_2c1pp")
+font_size = 27

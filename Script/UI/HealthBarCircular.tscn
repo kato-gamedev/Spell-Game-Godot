@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://e80uevlutk2e"]
+
+[ext_resource type="Script" uid="uid://bgaorse4sbs3k" path="res://Script/UI/HeathBarCircular.gd" id="1_f8u1b"]
+[ext_resource type="Texture2D" uid="uid://cfq0lbqwp2vr5" path="res://Asset/Photoshop/circular shape - black.png" id="2_usj8n"]
+[ext_resource type="Texture2D" uid="uid://cr2slcu0t1g2" path="res://Asset/Photoshop/circular shape - big.png" id="3_ey3th"]
+[ext_resource type="Texture2D" uid="uid://ddto2p56b2ilq" path="res://Asset/Photoshop/circular shape - black - small.png" id="4_ey3th"]
+[ext_resource type="Texture2D" uid="uid://cyc57fevmovx6" path="res://Asset/Photoshop/circular shape - small.png" id="5_4qc6x"]
+
+[node name="HealthBarCircular" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1088.0
+offset_bottom = -584.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f8u1b")
+
+[node name="TextureProgressBar - Health" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+value = 33.0
+fill_mode = 4
+texture_under = ExtResource("2_usj8n")
+texture_progress = ExtResource("3_ey3th")
+tint_progress = Color(0.88, 0.14080003, 0.14080003, 1)
+
+[node name="TextureProgressBar - Mana" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+value = 100.0
+fill_mode = 4
+texture_under = ExtResource("4_ey3th")
+texture_progress = ExtResource("5_4qc6x")
+tint_progress = Color(0.2088, 0.55042, 0.87, 1)

@@ -1,0 +1,206 @@
+[gd_scene load_steps=21 format=3 uid="uid://bracxpic4soob"]
+
+[ext_resource type="Texture2D" uid="uid://c4jnf8awf63bg" path="res://Shader/Image/japan image.png" id="1_6omqj"]
+[ext_resource type="Shader" uid="uid://dl8gfrepyisa" path="res://Shader/ColorPalette.gdshader" id="2_7rr4y"]
+[ext_resource type="Texture2D" uid="uid://dg1f1gu65oa3h" path="res://Shader/Image/tlou 1.jpg" id="3_4dlvu"]
+[ext_resource type="Texture2D" uid="uid://bkvrdyg2ly8t2" path="res://Shader/Image/tloud 2.jpg" id="4_7rr4y"]
+[ext_resource type="Texture2D" uid="uid://cepyutgsydw78" path="res://Shader/Image/tlou 3.jpg" id="5_nq78y"]
+[ext_resource type="Texture2D" uid="uid://c6rmbx35bmume" path="res://Shader/Image/my game.png" id="5_waykw"]
+[ext_resource type="Texture2D" uid="uid://cap8tqpibnfc2" path="res://Shader/Image/rime.png" id="6_fq2dw"]
+[ext_resource type="Shader" uid="uid://b2p2526rnap16" path="res://Shader/oklch_posterization.gdshader" id="6_nq78y"]
+[ext_resource type="Texture2D" uid="uid://cxji1pilsgc4b" path="res://Shader/Image/jinx.png" id="7_sx4gp"]
+[ext_resource type="Texture2D" uid="uid://dptqbms6k77w4" path="res://Shader/Image/rime 2.jpg" id="8_adp0d"]
+[ext_resource type="Shader" uid="uid://dhpvie2aq1b6u" path="res://Shader/Kuwahara.gdshader" id="8_waykw"]
+[ext_resource type="Texture2D" uid="uid://dfxrswwpqj1d5" path="res://Shader/Image/rime 3.jpg" id="9_km8gg"]
+[ext_resource type="VideoStream" uid="uid://dl8ahi6qd0t17" path="res://Shader/Image/output.ogv" id="10_km8gg"]
+[ext_resource type="Shader" uid="uid://p1e4wbf7p754" path="res://Shader/BlackWhite.gdshader" id="13_ouewq"]
+[ext_resource type="Shader" uid="uid://bp6dbeo2ta0k8" path="res://Shader/Simulation.gdshader" id="15_xsnrn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fq2dw"]
+shader = ExtResource("8_waykw")
+shader_parameter/_KernelSize = 4
+shader_parameter/_Hardness = 1.0
+shader_parameter/_Sharpness = 8.0
+shader_parameter/_Zeta = 0.1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_waykw"]
+shader = ExtResource("6_nq78y")
+shader_parameter/mix_amount = 0.0
+shader_parameter/use_l = true
+shader_parameter/use_c = false
+shader_parameter/use_h = false
+shader_parameter/steps_l = 2.0
+shader_parameter/level_c = 5.0
+shader_parameter/level_h = 0.05
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ouewq"]
+shader = ExtResource("13_ouewq")
+shader_parameter/BlendIntensity = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7rr4y"]
+shader = ExtResource("2_7rr4y")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5kj7b"]
+shader = ExtResource("15_xsnrn")
+shader_parameter/color_bg = Color(0.05, 0.05, 0.08, 1)
+shader_parameter/color_1 = Color(0.1, 0.6, 0.8, 1)
+shader_parameter/color_2 = Color(0.8, 0.2, 0.3, 1)
+shader_parameter/color_3 = Color(1, 0.8, 0.4, 1)
+shader_parameter/speed = 0.3
+shader_parameter/scale = 3.0
+
+[node name="ShaderTest" type="Node3D"]
+visible = false
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+
+[node name="1" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("1_6omqj")
+expand_mode = 1
+metadata/_tab_index = 0
+
+[node name="2" type="TextureRect" parent="TabContainer"]
+layout_mode = 2
+texture = ExtResource("3_4dlvu")
+expand_mode = 1
+metadata/_tab_index = 1
+
+[node name="3" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_7rr4y")
+expand_mode = 1
+metadata/_tab_index = 2
+
+[node name="4" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_nq78y")
+expand_mode = 1
+metadata/_tab_index = 3
+
+[node name="5" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_waykw")
+expand_mode = 1
+metadata/_tab_index = 4
+
+[node name="6" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_fq2dw")
+expand_mode = 3
+metadata/_tab_index = 5
+
+[node name="7" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_sx4gp")
+expand_mode = 1
+metadata/_tab_index = 6
+
+[node name="8" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("8_adp0d")
+expand_mode = 1
+metadata/_tab_index = 7
+
+[node name="9" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("9_km8gg")
+expand_mode = 1
+metadata/_tab_index = 8
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+stream = ExtResource("10_km8gg")
+autoplay = true
+metadata/_tab_index = 9
+
+[node name="Shader" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Kuwahara" type="ColorRect" parent="Shader"]
+visible = false
+material = SubResource("ShaderMaterial_fq2dw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="Shader"]
+visible = false
+position = Vector2(552, 347.00003)
+scale = Vector2(6.3200006, 3.5850003)
+copy_mode = 2
+
+[node name="Posterization" type="ColorRect" parent="Shader"]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_waykw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy4" type="BackBufferCopy" parent="Shader"]
+visible = false
+position = Vector2(563.49994, 327.99997)
+scale = Vector2(6.0049996, 3.46)
+copy_mode = 2
+
+[node name="BlackWhite" type="ColorRect" parent="Shader"]
+z_index = -1
+material = SubResource("ShaderMaterial_ouewq")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="Shader"]
+visible = false
+position = Vector2(552, 347.00003)
+scale = Vector2(6.3200006, 3.5850003)
+copy_mode = 2
+
+[node name="Dither" type="ColorRect" parent="Shader"]
+visible = false
+material = SubResource("ShaderMaterial_7rr4y")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Simulation" type="ColorRect" parent="Shader"]
+material = SubResource("ShaderMaterial_5kj7b")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

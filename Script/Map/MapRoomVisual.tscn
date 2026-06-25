@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbg27g78yuer1"]
+
+[ext_resource type="Script" uid="uid://n6ovagx7um4j" path="res://Script/Map/MapRoomVisual.gd" id="1_has6e"]
+
+[node name="MapRoomVisual" type="TextureButton"]
+script = ExtResource("1_has6e")

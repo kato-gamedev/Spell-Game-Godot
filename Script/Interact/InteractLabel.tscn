@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ewd5gk6quf6u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ppa16"]
+font_size = 12
+
+[node name="InteractLabel" type="Label"]
+text = "Interact"
+label_settings = SubResource("LabelSettings_ppa16")

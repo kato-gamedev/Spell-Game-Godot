@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StrengthPlus" load_steps=3 format=3 uid="uid://ch5ugbcmtbqpd"]
+
+[ext_resource type="Script" uid="uid://dr3bfjcnqign7" path="res://SpellSystem/Spell/StrengthPlus.gd" id="1_1jcyq"]
+[ext_resource type="Texture2D" uid="uid://bx0ar2qgcaeht" path="res://SpellSystem/Icon/Strength plus.png" id="1_ucsjm"]
+
+[resource]
+script = ExtResource("1_1jcyq")
+SPELL_TYPE = 2
+icon = ExtResource("1_ucsjm")
+metadata/_custom_type_script = "uid://dr3bfjcnqign7"

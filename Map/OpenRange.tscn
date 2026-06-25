@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://bekurq6ssp687"]
+
+[ext_resource type="Script" uid="uid://dvtvyteuqarup" path="res://Map/OpenField.gd" id="1_joxa1"]
+[ext_resource type="PackedScene" uid="uid://2xqylad83n0p" path="res://Script/Character/Enemy.tscn" id="2_lhj5j"]
+[ext_resource type="PackedScene" uid="uid://chicx2kxgspaq" path="res://Script/Character/Player.tscn" id="3_2fllf"]
+[ext_resource type="PackedScene" uid="uid://dlw2xvl8eobrq" path="res://Map/PrototypeBox.tscn" id="4_j6o30"]
+[ext_resource type="PackedScene" uid="uid://blqp17yr620x4" path="res://Script/GameSystem/ExpDrop.tscn" id="5_lhj5j"]
+[ext_resource type="PackedScene" uid="uid://yqyqwmal0c8x" path="res://Script/Character/PracticeDummy.tscn" id="6_2fllf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibrfk"]
+bg_color = Color(0, 0, 0, 0.70980394)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cxbje"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ibrfk"]
+sky_material = SubResource("ProceduralSkyMaterial_cxbje")
+
+[sub_resource type="Environment" id="Environment_w5ew7"]
+background_mode = 2
+sky = SubResource("Sky_ibrfk")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="OpenField" type="Node3D"]
+script = ExtResource("1_joxa1")
+enemy_scene = ExtResource("2_lhj5j")
+
+[node name="Time" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -96.0
+offset_top = 29.0
+offset_right = -35.0
+offset_bottom = 63.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_ibrfk")
+text = "00:00"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_w5ew7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("3_2fllf")]
+transform = Transform3D(-0.091675416, 0, 0.99578893, 0, 1, 0, -0.99578893, 0, -0.091675416, -15.20249, 0.0015529394, 1.815212)
+
+[node name="PrototypeBox" parent="." instance=ExtResource("4_j6o30")]
+transform = Transform3D(0.99999857, 0.0012746011, -0.0011125058, -0.0012737287, 0.9999988, 0.00079145207, 0.0011135046, -0.00079004635, 0.99999905, 0.0021824837, -0.49248886, -0.005672455)
+use_collision = true
+collision_layer = 5
+collision_mask = 0
+size = Vector3(50, 1, 50)
+
+[node name="ExpDrop" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.600002, 0.02207756, 2.9395704)
+
+[node name="ExpDrop2" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.703375, 0.020796478, 1.1518929)
+
+[node name="ExpDrop3" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.164658, 0.016744792, -3.1074793)
+
+[node name="ExpDrop4" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.656008, 0.023834407, 6.6863494)
+
+[node name="ExpDrop5" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.648706, 0.0136864185, -10.986957)
+
+[node name="ExpDrop6" parent="." instance=ExtResource("5_lhj5j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.141989, 0.02772069, -5.31223)
+
+[node name="PracticeDummy" parent="." instance=ExtResource("6_2fllf")]
+transform = Transform3D(-0.13692588, 0, -0.9905813, 0, 1, 0, 0.9905813, 0, -0.13692588, -7.0767384, 0.018019617, 1.8740734)

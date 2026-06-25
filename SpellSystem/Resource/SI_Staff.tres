@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SpellInventory" load_steps=5 format=3 uid="uid://3maa6k52a2b7"]
+
+[ext_resource type="Script" uid="uid://ns1rnsmy8hu1" path="res://SpellSystem/Spell.gd" id="1_capkp"]
+[ext_resource type="Resource" uid="uid://bm6lqdsua0yr0" path="res://SpellSystem/Resource/SparkBolt.tres" id="2_qvl45"]
+[ext_resource type="Script" uid="uid://cpas46myh4q3l" path="res://SpellSystem/SpellInventory.gd" id="3_8snm2"]
+[ext_resource type="Resource" uid="uid://dfgjqcjpdg5s1" path="res://SpellSystem/Resource/ArcaneOrb.tres" id="3_qvl45"]
+
+[resource]
+script = ExtResource("3_8snm2")
+_SPELLS = Dictionary[int, ExtResource("1_capkp")]({
+0: ExtResource("2_qvl45"),
+1: ExtResource("3_qvl45")
+})
+metadata/_custom_type_script = "uid://cpas46myh4q3l"

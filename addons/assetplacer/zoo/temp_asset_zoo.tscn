@@ -1,0 +1,1336 @@
+[gd_scene load_steps=334 format=3 uid="uid://bepvd87ch3q17"]
+
+[ext_resource type="PackedScene" uid="uid://6ovokhnc08p8" path="res://Model/PSX Mega Pack II/Models/Structures/boiler_hx_4.glb" id="1_mg822"]
+[ext_resource type="PackedScene" uid="uid://cmygdg5lawbhs" path="res://Model/PSX Mega Pack II/Models/Structures/platform_mx_1.glb" id="2_iqcwj"]
+[ext_resource type="PackedScene" uid="uid://cpdyjl1r3wdwk" path="res://Model/PSX Mega Pack II/Models/Structures/rusty_crowbar_mx_1.glb" id="3_gv0ce"]
+[ext_resource type="PackedScene" uid="uid://us2m1mot0ehd" path="res://Model/PSX Mega Pack II/Models/Structures/rusty_crowbar_mx_1_1.glb" id="4_7h17x"]
+[ext_resource type="PackedScene" uid="uid://dixfd0c7q5x1j" path="res://Model/PSX Mega Pack II/Models/Structures/warehouse_hl_1.glb" id="5_6p8n8"]
+[ext_resource type="PackedScene" uid="uid://c7eojl82g7f60" path="res://Model/PSX Mega Pack II/Models/Structures/warehouse_hl_1_frame_piece.glb" id="6_c1uv8"]
+[ext_resource type="PackedScene" uid="uid://bnbd7pjvp6joq" path="res://Model/PSX Mega Pack II/Models/Structures/water_tower_hm_1.glb" id="7_in812"]
+[ext_resource type="PackedScene" uid="uid://lwhliygc2idy" path="res://Model/PSX Mega Pack II/Models/Buildings/garages_block_hr_1.glb" id="8_0v5rf"]
+[ext_resource type="PackedScene" uid="uid://b0okorukbob35" path="res://Model/PSX Mega Pack II/Models/Buildings/garage_hl_1.glb" id="9_bp1t7"]
+[ext_resource type="PackedScene" uid="uid://byulwoyg61q7c" path="res://Model/PSX Mega Pack II/Models/Buildings/garage_hl_2.glb" id="10_mb8sa"]
+[ext_resource type="PackedScene" uid="uid://ndojbxthkorx" path="res://Model/PSX Mega Pack II/Models/Buildings/garage_hm_1.glb" id="11_va0et"]
+[ext_resource type="PackedScene" uid="uid://cosi40okpk5vy" path="res://Model/PSX Mega Pack II/Models/Buildings/garage_hm_2.glb" id="12_2kvwk"]
+[ext_resource type="PackedScene" uid="uid://cj1vqt2doiwug" path="res://Model/PSX Mega Pack II/Models/Buildings/shed_ax_1.glb" id="13_ljysd"]
+[ext_resource type="PackedScene" uid="uid://belkt2mw3udf5" path="res://Model/PSX Mega Pack II/Models/Buildings/shed_ax_2.glb" id="14_260gw"]
+[ext_resource type="PackedScene" uid="uid://smvf6vdmd5lr" path="res://Model/PSX Mega Pack II/Models/Buildings/shed_ax_3.glb" id="15_m0qeg"]
+[ext_resource type="PackedScene" uid="uid://5eiqb5kj1sqq" path="res://Model/PSX Mega Pack II/Models/Buildings/shed_ax_4.glb" id="16_qwflu"]
+[ext_resource type="PackedScene" uid="uid://dce6move20l2h" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_1.glb" id="17_gmfy4"]
+[ext_resource type="PackedScene" uid="uid://ca7pu2wptdnl3" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_2.glb" id="18_7par1"]
+[ext_resource type="PackedScene" uid="uid://dnmmodtmlrfep" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_3.glb" id="19_qqnhi"]
+[ext_resource type="PackedScene" uid="uid://ci3exueiitmp2" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_4.glb" id="20_fi2u0"]
+[ext_resource type="PackedScene" uid="uid://44gdg1gg6wcr" path="res://Model/PSX Mega Pack II/Models/Buildings/warehouse_mx_4_1.glb" id="21_4ta30"]
+[ext_resource type="PackedScene" uid="uid://uiui8q7wng6p" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/door_hr_6.glb" id="22_unf44"]
+[ext_resource type="PackedScene" uid="uid://dsrv07qivq54w" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/door_hr_8.glb" id="23_42q38"]
+[ext_resource type="PackedScene" uid="uid://q1con3u27sfu" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/door_hr_12.glb" id="24_sqry1"]
+[ext_resource type="PackedScene" uid="uid://dr5e1jl6tlhtl" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/door_hr_13.glb" id="25_mncij"]
+[ext_resource type="PackedScene" uid="uid://dwc73xfqiqypf" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/door_hr_14.glb" id="26_xuky6"]
+[ext_resource type="PackedScene" uid="uid://dvqlkxrjk4huh" path="res://Model/PSX Mega Pack II/Models/Doors & Gates/gate_1.glb" id="27_qu8ja"]
+[ext_resource type="PackedScene" uid="uid://bf4idubgl7dq6" path="res://Model/PSX Mega Pack II/Models/Modular Structures/asphalt_hr_1.glb" id="28_c8bx4"]
+[ext_resource type="PackedScene" uid="uid://7d8c0f4of6vf" path="res://Model/PSX Mega Pack II/Models/Modular Structures/asphalt_hr_1_large.glb" id="29_kn2sd"]
+[ext_resource type="PackedScene" uid="uid://dnvaknwpsvpyu" path="res://Model/PSX Mega Pack II/Models/Modular Structures/asphalt_hr_2.glb" id="30_wynmn"]
+[ext_resource type="PackedScene" uid="uid://dp3pg3xkhx75b" path="res://Model/PSX Mega Pack II/Models/Modular Structures/asphalt_hr_3.glb" id="31_nba7t"]
+[ext_resource type="PackedScene" uid="uid://d2f0yrk2q0vkr" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_hc_horizonatal_1.glb" id="32_7rb4b"]
+[ext_resource type="PackedScene" uid="uid://clkiueudijj3j" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_hc_horizonatal_2.glb" id="33_l6rb6"]
+[ext_resource type="PackedScene" uid="uid://lrgynnjn8sfq" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_hc_vertical_1.glb" id="34_1h4ua"]
+[ext_resource type="PackedScene" uid="uid://dlhwfq2axpdqp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_hc_vertical_2.glb" id="35_ijtsy"]
+[ext_resource type="PackedScene" uid="uid://bjv8ogykl0tfn" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_hl_1.glb" id="36_4jkda"]
+[ext_resource type="PackedScene" uid="uid://rmteqd6huiu8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_rtx_1.glb" id="37_erp30"]
+[ext_resource type="PackedScene" uid="uid://cd237fy0jpf8r" path="res://Model/PSX Mega Pack II/Models/Modular Structures/beam_rtx_2_pipes.glb" id="38_jd0xe"]
+[ext_resource type="PackedScene" uid="uid://bdb7e2jpyboxp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/concrete_pipe_hm_1_end.glb" id="39_d3tjh"]
+[ext_resource type="PackedScene" uid="uid://c2wq1tafi1y6c" path="res://Model/PSX Mega Pack II/Models/Modular Structures/concrete_pipe_hm_1_end_bars_1.glb" id="40_n3l2f"]
+[ext_resource type="PackedScene" uid="uid://byhoeqw86vwtm" path="res://Model/PSX Mega Pack II/Models/Modular Structures/concrete_pipe_hm_1_middle.glb" id="41_0aos3"]
+[ext_resource type="PackedScene" uid="uid://dd14h6al862ju" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hr_1.glb" id="42_elv6v"]
+[ext_resource type="PackedScene" uid="uid://cd00mx7cwcpcw" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hr_1_wide.glb" id="43_lisqf"]
+[ext_resource type="PackedScene" uid="uid://daiis0b4auek" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hr_2_regular.glb" id="44_4xugv"]
+[ext_resource type="PackedScene" uid="uid://b1p87vc7usr08" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hr_2_wide.glb" id="45_qhqvp"]
+[ext_resource type="PackedScene" uid="uid://d2kuovyq5kpcd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hr_3_regular.glb" id="46_bjona"]
+[ext_resource type="PackedScene" uid="uid://bd43yhbo0hhdg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hs_1_regular.glb" id="47_72oda"]
+[ext_resource type="PackedScene" uid="uid://ckx80ysioh2tg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_hs_1_wide.glb" id="48_tmaog"]
+[ext_resource type="PackedScene" uid="uid://7e8fuyr72u6l" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_rg_1_regular.glb" id="49_yp7og"]
+[ext_resource type="PackedScene" uid="uid://fqnwxujb5whg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_rg_1_wide.glb" id="50_11kru"]
+[ext_resource type="PackedScene" uid="uid://bi6utpvwfvehg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_rg_2_wide.glb" id="51_ne6js"]
+[ext_resource type="PackedScene" uid="uid://b4subjm47ivd5" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_rtx_1_wide.glb" id="52_0cxnw"]
+[ext_resource type="PackedScene" uid="uid://c7xcsfr1kn0dv" path="res://Model/PSX Mega Pack II/Models/Modular Structures/doorway_rx_1.glb" id="53_ut345"]
+[ext_resource type="PackedScene" uid="uid://bvidyjebog5o7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_1.glb" id="54_1ciox"]
+[ext_resource type="PackedScene" uid="uid://b8p0rvn8xl7vm" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_2_hole.glb" id="55_ah0t7"]
+[ext_resource type="PackedScene" uid="uid://dgr42igq14rp3" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_3.glb" id="56_sprvo"]
+[ext_resource type="PackedScene" uid="uid://detcmw1iprg4h" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_4.glb" id="57_r6g8b"]
+[ext_resource type="PackedScene" uid="uid://cv8tr35e8ws7b" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_5.glb" id="58_8frq4"]
+[ext_resource type="PackedScene" uid="uid://cpwkylbnb6nh7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_5_m1a_1.glb" id="59_p4l2v"]
+[ext_resource type="PackedScene" uid="uid://dcp31c5kb7p8q" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_5_m2a_1.glb" id="60_7h8ih"]
+[ext_resource type="PackedScene" uid="uid://c87op407eti2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hr_6.glb" id="61_evhkn"]
+[ext_resource type="PackedScene" uid="uid://dv0e0eiwjwtyo" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hs_1_slope.glb" id="62_0wmjj"]
+[ext_resource type="PackedScene" uid="uid://cku4vcwmsv8c5" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hs_2_slope.glb" id="63_nyqeo"]
+[ext_resource type="PackedScene" uid="uid://b6mw4soygsikx" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hs_3_slope.glb" id="64_n16d8"]
+[ext_resource type="PackedScene" uid="uid://byb3omjxccecx" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hs_4_slope.glb" id="65_j7jc2"]
+[ext_resource type="PackedScene" uid="uid://dlcdivowpl4ld" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_hy_1.glb" id="66_ktg6s"]
+[ext_resource type="PackedScene" uid="uid://d1nb6fa22btce" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_rtx_1.glb" id="67_td6dl"]
+[ext_resource type="PackedScene" uid="uid://6xpc06m0y4a" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_rtx_1_corner.glb" id="68_13p6t"]
+[ext_resource type="PackedScene" uid="uid://88hc8ud863hq" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_rtx_2.glb" id="69_0wun0"]
+[ext_resource type="PackedScene" uid="uid://cwf2owfrjs7my" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_rtx_3.glb" id="70_1o8k4"]
+[ext_resource type="PackedScene" uid="uid://cngpibfv05rjv" path="res://Model/PSX Mega Pack II/Models/Modular Structures/floor_ceiling_rx_1.glb" id="71_nt3ox"]
+[ext_resource type="PackedScene" uid="uid://djj5ky28j2p5k" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_hr_1.glb" id="72_7vsya"]
+[ext_resource type="PackedScene" uid="uid://bkpsddjpvcgmu" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_hr_2.glb" id="73_qk80p"]
+[ext_resource type="PackedScene" uid="uid://rstnp7rgue52" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_hs_1.glb" id="74_bcvvl"]
+[ext_resource type="PackedScene" uid="uid://cftw1wn3g0xqi" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_hs_2.glb" id="75_nwkg4"]
+[ext_resource type="PackedScene" uid="uid://bg5b2axtvxt23" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_rg_1.glb" id="76_shnm6"]
+[ext_resource type="PackedScene" uid="uid://bm51nst64pes6" path="res://Model/PSX Mega Pack II/Models/Modular Structures/garage_door_frame_rg_2.glb" id="77_jo0c0"]
+[ext_resource type="PackedScene" uid="uid://6ex3irexhif4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_ac_3.glb" id="78_1f83t"]
+[ext_resource type="PackedScene" uid="uid://dfp241108qpy5" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_ax_3.glb" id="79_bq2vi"]
+[ext_resource type="PackedScene" uid="uid://dip71jotwu0qh" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_ay_2.glb" id="80_tvnl3"]
+[ext_resource type="PackedScene" uid="uid://b16rgjdccpm5y" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_1_broken.glb" id="81_1t0jm"]
+[ext_resource type="PackedScene" uid="uid://fpo7fsf3uhh2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_2.glb" id="82_6eay1"]
+[ext_resource type="PackedScene" uid="uid://cpgn56a2lg2b2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_4.glb" id="83_otlae"]
+[ext_resource type="PackedScene" uid="uid://bi6j0xrytw0f6" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_5.glb" id="84_6fcoj"]
+[ext_resource type="PackedScene" uid="uid://got6flfkckrh" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_6.glb" id="85_ktttb"]
+[ext_resource type="PackedScene" uid="uid://b6wfga8tt7fx" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hr_8.glb" id="86_c1loc"]
+[ext_resource type="PackedScene" uid="uid://gkyas6k6avti" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_1_broken.glb" id="87_acbsj"]
+[ext_resource type="PackedScene" uid="uid://cgr4nnsdbwb17" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_2.glb" id="88_c5kdl"]
+[ext_resource type="PackedScene" uid="uid://buggbowdcnqk5" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_4.glb" id="89_hajpk"]
+[ext_resource type="PackedScene" uid="uid://kxdy5i8wwawc" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_5.glb" id="90_x8n34"]
+[ext_resource type="PackedScene" uid="uid://vgsmnlgpbu34" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_6.glb" id="91_w7lap"]
+[ext_resource type="PackedScene" uid="uid://dkex8s538kxg8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_7.glb" id="92_y55e2"]
+[ext_resource type="PackedScene" uid="uid://dn8nmy4pjxqw2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_hs_8.glb" id="93_iv04p"]
+[ext_resource type="PackedScene" uid="uid://coqotqolayjvw" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rgx_1.glb" id="94_8lxwn"]
+[ext_resource type="PackedScene" uid="uid://cicguvwglopoo" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rgx_2.glb" id="95_sr2e6"]
+[ext_resource type="PackedScene" uid="uid://ke1554twf4vc" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rgx_3.glb" id="96_6cna7"]
+[ext_resource type="PackedScene" uid="uid://dcmtrwpfaut2p" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_1_broken.glb" id="97_v2pcn"]
+[ext_resource type="PackedScene" uid="uid://bygeumxd4yc23" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_2.glb" id="98_pf0c2"]
+[ext_resource type="PackedScene" uid="uid://voau72kkadt7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_4.glb" id="99_r3rou"]
+[ext_resource type="PackedScene" uid="uid://cdcefaa3qeakp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_5.glb" id="100_x0mk1"]
+[ext_resource type="PackedScene" uid="uid://diogjllwsxbta" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_6.glb" id="101_qhplc"]
+[ext_resource type="PackedScene" uid="uid://bho0l6f4ybb4r" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_7.glb" id="102_s6cd4"]
+[ext_resource type="PackedScene" uid="uid://cfnq5l7ehqmus" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_8.glb" id="103_0bd47"]
+[ext_resource type="PackedScene" uid="uid://cd1yiivgsrxm3" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_9.glb" id="104_k6fuh"]
+[ext_resource type="PackedScene" uid="uid://cb74r0iwsgwmd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rg_10.glb" id="105_qopmn"]
+[ext_resource type="PackedScene" uid="uid://dajrkhnjgixc3" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rtx_1.glb" id="106_nd2f2"]
+[ext_resource type="PackedScene" uid="uid://cp3ora2ocl3iy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rtx_2.glb" id="107_uu5de"]
+[ext_resource type="PackedScene" uid="uid://52vensfasswp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pillar_rx_8.glb" id="108_gft6q"]
+[ext_resource type="PackedScene" uid="uid://dexlfgovr6rkg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipes_hr_5_middle.glb" id="109_22ob8"]
+[ext_resource type="PackedScene" uid="uid://cupduxn5ntqcd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_bx_1.glb" id="110_yh6k3"]
+[ext_resource type="PackedScene" uid="uid://bvnwrcwd4lgua" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_bx_2.glb" id="111_co3vn"]
+[ext_resource type="PackedScene" uid="uid://bt83hvi28hk2w" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_bx_3.glb" id="112_sa01y"]
+[ext_resource type="PackedScene" uid="uid://wp385vgwvyub" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_bx_4.glb" id="113_0xed2"]
+[ext_resource type="PackedScene" uid="uid://ocqwt1r4lr3n" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_cx_1.glb" id="114_04trn"]
+[ext_resource type="PackedScene" uid="uid://cy86lw3efxjdr" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_cx_2.glb" id="115_q5p7u"]
+[ext_resource type="PackedScene" uid="uid://b688ms11hmq7o" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_cx_3.glb" id="116_loij5"]
+[ext_resource type="PackedScene" uid="uid://dh1vp0enb33w4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_cx_4.glb" id="117_jtou4"]
+[ext_resource type="PackedScene" uid="uid://bfdh7xdg7dq3q" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_cx_5.glb" id="118_xfvoo"]
+[ext_resource type="PackedScene" uid="uid://yco1gwr4c8hf" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_dx_1.glb" id="119_lugy1"]
+[ext_resource type="PackedScene" uid="uid://ck7ipplfxdd1t" path="res://Model/PSX Mega Pack II/Models/Modular Structures/pipe_dx_2.glb" id="120_7cno0"]
+[ext_resource type="PackedScene" uid="uid://dotg3li3evkbp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_ax_1.glb" id="121_oewhs"]
+[ext_resource type="PackedScene" uid="uid://bnfxskui4xoht" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_ax_2.glb" id="122_y3l0g"]
+[ext_resource type="PackedScene" uid="uid://djhym062emu4m" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_bx_1.glb" id="123_3c3dk"]
+[ext_resource type="PackedScene" uid="uid://cn4oqd5jn6pm" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_bx_2.glb" id="124_i0jgv"]
+[ext_resource type="PackedScene" uid="uid://lyak3sbrmpfv" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_b_handrail_1.glb" id="125_crnm4"]
+[ext_resource type="PackedScene" uid="uid://h0kl3mumtnx8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_b_handrail_1_1.glb" id="126_dcp6r"]
+[ext_resource type="PackedScene" uid="uid://ljk6sldnav7b" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_b_handrail_2.glb" id="127_n8u76"]
+[ext_resource type="PackedScene" uid="uid://bvj00yay2vahi" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_cx_1.glb" id="128_rm2xt"]
+[ext_resource type="PackedScene" uid="uid://cw70l7rmlhs06" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_large_mx_1.glb" id="129_dhe8y"]
+[ext_resource type="PackedScene" uid="uid://0jonvx2bgrhs" path="res://Model/PSX Mega Pack II/Models/Modular Structures/platform_small_mx_1.glb" id="130_tno7a"]
+[ext_resource type="PackedScene" uid="uid://xt6yhlar3shy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/ramp_platform_slim_mx_1.glb" id="131_op1he"]
+[ext_resource type="PackedScene" uid="uid://cwa1xc7sggbi7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/ramp_platform_wide_mx_1.glb" id="132_ftbke"]
+[ext_resource type="PackedScene" uid="uid://7etr6autny4d" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_bx_1.glb" id="133_676m7"]
+[ext_resource type="PackedScene" uid="uid://drie7qw4t463t" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_bx_1_corner_1.glb" id="134_b5ape"]
+[ext_resource type="PackedScene" uid="uid://cjmpxfvveh0je" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_bx_1_corner_2.glb" id="135_h7mhd"]
+[ext_resource type="PackedScene" uid="uid://5876hcogxv86" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_bx_1_side.glb" id="136_junlu"]
+[ext_resource type="PackedScene" uid="uid://wlv3renn764n" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_bx_2.glb" id="137_evwe7"]
+[ext_resource type="PackedScene" uid="uid://bgksxgd30rcry" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_middle_angle.glb" id="138_b7a0t"]
+[ext_resource type="PackedScene" uid="uid://7dwdxe7olf0v" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_side_1_angle.glb" id="139_rqjkj"]
+[ext_resource type="PackedScene" uid="uid://r71ycgdi4frg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_side_2_angle_corner_1.glb" id="140_dx1s4"]
+[ext_resource type="PackedScene" uid="uid://ba07s3myt8i5w" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_side_2_angle_corner_2.glb" id="141_rrsm7"]
+[ext_resource type="PackedScene" uid="uid://btfwdc1pavech" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_side_2_angle_edge_1.glb" id="142_1scu2"]
+[ext_resource type="PackedScene" uid="uid://dpvqamjp2unqe" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_hr_3_side_2_angle_edge_2.glb" id="143_btag6"]
+[ext_resource type="PackedScene" uid="uid://4k6aw271qub6" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_1.glb" id="144_w4ii1"]
+[ext_resource type="PackedScene" uid="uid://se1hg47llyyg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_2.glb" id="145_yrn6u"]
+[ext_resource type="PackedScene" uid="uid://e4mxb23xphqo" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_3.glb" id="146_rf6ax"]
+[ext_resource type="PackedScene" uid="uid://cil67rl2shdxl" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_a_1.glb" id="147_rew2h"]
+[ext_resource type="PackedScene" uid="uid://cjkwvhep8fbfy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_a_2.glb" id="148_navuo"]
+[ext_resource type="PackedScene" uid="uid://ts4gr5mf3m45" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_a_3.glb" id="149_hef86"]
+[ext_resource type="PackedScene" uid="uid://rxbbk8cuw2j2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_a_4.glb" id="150_k0n2v"]
+[ext_resource type="PackedScene" uid="uid://dyo1dck18kqhh" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_b_1.glb" id="151_qs1y0"]
+[ext_resource type="PackedScene" uid="uid://byi4e28fh4d5q" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_b_2.glb" id="152_jrpxy"]
+[ext_resource type="PackedScene" uid="uid://cmxsxg0514r0m" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_b_3.glb" id="153_ba17m"]
+[ext_resource type="PackedScene" uid="uid://cwjpfygf8x8hg" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mh_4_b_4.glb" id="154_vg67o"]
+[ext_resource type="PackedScene" uid="uid://batdregkm1476" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_mx_1.glb" id="155_llyp0"]
+[ext_resource type="PackedScene" uid="uid://ij86sc8t2u1f" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_small_hr_1.glb" id="156_gsq8m"]
+[ext_resource type="PackedScene" uid="uid://bxudiebk1bsm8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_small_hr_2.glb" id="157_o11js"]
+[ext_resource type="PackedScene" uid="uid://7qjgejld608t" path="res://Model/PSX Mega Pack II/Models/Modular Structures/roof_small_hr_3.glb" id="158_nkf6f"]
+[ext_resource type="PackedScene" uid="uid://8sctnao726ot" path="res://Model/PSX Mega Pack II/Models/Modular Structures/seam_hl_2.glb" id="159_vjq4r"]
+[ext_resource type="PackedScene" uid="uid://epjunwws3gm4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/seam_hr_1.glb" id="160_kxbmq"]
+[ext_resource type="PackedScene" uid="uid://dwm7seepraswj" path="res://Model/PSX Mega Pack II/Models/Modular Structures/structure_piece_rg_1.glb" id="161_m3pd6"]
+[ext_resource type="PackedScene" uid="uid://ddmfsnqhck2iy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/structure_piece_rg_1_1.glb" id="162_auwti"]
+[ext_resource type="PackedScene" uid="uid://bv2kjxlv1mphy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/structure_piece_rg_2.glb" id="163_d8r2r"]
+[ext_resource type="PackedScene" uid="uid://wxlsn1wa40r4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1.glb" id="164_v5mim"]
+[ext_resource type="PackedScene" uid="uid://b1c242j8p3i1n" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_double.glb" id="165_b74sj"]
+[ext_resource type="PackedScene" uid="uid://bsm0tba1oopc0" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_hole_1.glb" id="166_a6pvd"]
+[ext_resource type="PackedScene" uid="uid://bxdlru1dwk7k8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_hole_2.glb" id="167_w4l2r"]
+[ext_resource type="PackedScene" uid="uid://iv7gwwbiin7j" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_m1a_1.glb" id="168_6g5vh"]
+[ext_resource type="PackedScene" uid="uid://bd2rhlfmeok2x" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_m1a_2.glb" id="169_y0vwr"]
+[ext_resource type="PackedScene" uid="uid://bhivhfsdy4143" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_m2a_1.glb" id="170_dxbce"]
+[ext_resource type="PackedScene" uid="uid://de38fe8cbk1io" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_m2a_2.glb" id="171_oj0x4"]
+[ext_resource type="PackedScene" uid="uid://c83rorp7kp35t" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_m_2.glb" id="172_3fse7"]
+[ext_resource type="PackedScene" uid="uid://hdh30ah0tx8r" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_t_1.glb" id="173_yh8tf"]
+[ext_resource type="PackedScene" uid="uid://cwhwvai7qu3xb" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_1_t_2.glb" id="174_fkxkr"]
+[ext_resource type="PackedScene" uid="uid://dprn3sf7wpulf" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_2.glb" id="175_o80pb"]
+[ext_resource type="PackedScene" uid="uid://blbbokh1myh1r" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_15.glb" id="176_byoef"]
+[ext_resource type="PackedScene" uid="uid://dt1nurdyqxve7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hr_15_double.glb" id="177_1kfkh"]
+[ext_resource type="PackedScene" uid="uid://dgumyp6llinu7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1.glb" id="178_lki7x"]
+[ext_resource type="PackedScene" uid="uid://b0hdpttyn567" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_double.glb" id="179_7r16i"]
+[ext_resource type="PackedScene" uid="uid://bitrwkrjn6cdu" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_hole_1.glb" id="180_5bijn"]
+[ext_resource type="PackedScene" uid="uid://b0liemgvoyofu" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_hole_2.glb" id="181_d75yi"]
+[ext_resource type="PackedScene" uid="uid://b3n7i1fws0ag7" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_m1a_1.glb" id="182_mhydw"]
+[ext_resource type="PackedScene" uid="uid://3p2bgrb468w" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_m2a_1.glb" id="183_8u3bj"]
+[ext_resource type="PackedScene" uid="uid://co6kg51xbgdgn" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_m_2.glb" id="184_dmwdr"]
+[ext_resource type="PackedScene" uid="uid://y8se0txhgjgw" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_t_1.glb" id="185_fq1gc"]
+[ext_resource type="PackedScene" uid="uid://dm3q5qeaadlr4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_1_t_2.glb" id="186_nii2a"]
+[ext_resource type="PackedScene" uid="uid://kf247u6e2cm3" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_15.glb" id="187_w0p1a"]
+[ext_resource type="PackedScene" uid="uid://buy6rer2i46nx" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_hs_15_double.glb" id="188_ehrdg"]
+[ext_resource type="PackedScene" uid="uid://6gqwbqx2dsqt" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1.glb" id="189_o2esw"]
+[ext_resource type="PackedScene" uid="uid://ch6xeovegqql5" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_angle.glb" id="190_0yb0i"]
+[ext_resource type="PackedScene" uid="uid://gmssfepku4uc" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_double.glb" id="191_s5npp"]
+[ext_resource type="PackedScene" uid="uid://d2wocaamka38b" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_hole_1.glb" id="192_1vkk6"]
+[ext_resource type="PackedScene" uid="uid://ceihhue807gjc" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_hole_2.glb" id="193_371ej"]
+[ext_resource type="PackedScene" uid="uid://uyach623qxwf" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_m1a_1.glb" id="194_rr62f"]
+[ext_resource type="PackedScene" uid="uid://dn1jkwj3bnkv" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_m2a_1.glb" id="195_ctjlo"]
+[ext_resource type="PackedScene" uid="uid://x7mgulashrxk" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_m_2.glb" id="196_kh45i"]
+[ext_resource type="PackedScene" uid="uid://xj40iv845t6j" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_t_1.glb" id="197_ap28b"]
+[ext_resource type="PackedScene" uid="uid://dbjim1ptmp7p4" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_1_t_2.glb" id="198_m44jw"]
+[ext_resource type="PackedScene" uid="uid://bxio7wjbmyli6" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_15.glb" id="199_lomw7"]
+[ext_resource type="PackedScene" uid="uid://dp0a40u308s6u" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rg_15_double.glb" id="200_ttxqs"]
+[ext_resource type="PackedScene" uid="uid://drtbbdky2x2t0" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rtx_1.glb" id="201_5t6vn"]
+[ext_resource type="PackedScene" uid="uid://dns5y3l4gejtv" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rtx_2.glb" id="202_kst1o"]
+[ext_resource type="PackedScene" uid="uid://blmv3ejm8o4eh" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1.glb" id="203_s1pxs"]
+[ext_resource type="PackedScene" uid="uid://i1y8ug73uhih" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_1_3_height.glb" id="204_l7iey"]
+[ext_resource type="PackedScene" uid="uid://bl2mwcrfmderj" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_1_3_height_1_2_width.glb" id="205_8okhv"]
+[ext_resource type="PackedScene" uid="uid://f1lyha5wvav" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_1_4_width.glb" id="206_usf1c"]
+[ext_resource type="PackedScene" uid="uid://c72rmevweib26" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_1_4_width_1_3_height.glb" id="207_10s85"]
+[ext_resource type="PackedScene" uid="uid://cx4hb03w8n4xr" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_2_3_height.glb" id="208_q46tx"]
+[ext_resource type="PackedScene" uid="uid://uqa1d3ebmrj0" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_2_3_height_1_2_width.glb" id="209_8i3gc"]
+[ext_resource type="PackedScene" uid="uid://lxfwd43pupsy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m1a_1.glb" id="210_lcluq"]
+[ext_resource type="PackedScene" uid="uid://cghwhiadds8cd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m1a_1_1_3_height.glb" id="211_5ruji"]
+[ext_resource type="PackedScene" uid="uid://dlg0k0bo1c56s" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m1a_1_2_3_height.glb" id="212_qbxtk"]
+[ext_resource type="PackedScene" uid="uid://ddlcfwswqyfgr" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m2a_1.glb" id="213_usblf"]
+[ext_resource type="PackedScene" uid="uid://bd2qjq6xgbnfy" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m2a_1_1_3_height.glb" id="214_2ay6x"]
+[ext_resource type="PackedScene" uid="uid://coevrggqbkcvd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_1_m2a_1_2_3_height.glb" id="215_yy3t4"]
+[ext_resource type="PackedScene" uid="uid://dthksyqya26wq" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_2.glb" id="216_g6nq1"]
+[ext_resource type="PackedScene" uid="uid://bn5ehdbjhmr2d" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_rx_4.glb" id="217_8nm20"]
+[ext_resource type="PackedScene" uid="uid://8oqkjfl4yk8y" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hr_1.glb" id="218_ohnee"]
+[ext_resource type="PackedScene" uid="uid://bdr3pofea863x" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hr_2.glb" id="219_dxdlj"]
+[ext_resource type="PackedScene" uid="uid://duepspy45uryp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hr_3.glb" id="220_hwxgl"]
+[ext_resource type="PackedScene" uid="uid://du5lvm84wwifl" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hs_1.glb" id="221_1t8yx"]
+[ext_resource type="PackedScene" uid="uid://b46up1okdhap2" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hs_2.glb" id="222_b8y4f"]
+[ext_resource type="PackedScene" uid="uid://2kgtjfs0tu0c" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_hs_3.glb" id="223_f4u8n"]
+[ext_resource type="PackedScene" uid="uid://hlto750wn1s" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_rg_1.glb" id="224_gsv7j"]
+[ext_resource type="PackedScene" uid="uid://ctlnyv573d1ul" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_rg_2.glb" id="225_f1mkr"]
+[ext_resource type="PackedScene" uid="uid://b45k25snqp17g" path="res://Model/PSX Mega Pack II/Models/Modular Structures/wall_top_part_rg_3.glb" id="226_qvgu8"]
+[ext_resource type="PackedScene" uid="uid://chksnyltnw3xq" path="res://Model/PSX Mega Pack II/Models/Modular Structures/warehouse_hs_1_roof_1.glb" id="227_jwphq"]
+[ext_resource type="PackedScene" uid="uid://depko5kpjupms" path="res://Model/PSX Mega Pack II/Models/Modular Structures/warehouse_hs_1_roof_2.glb" id="228_crrvo"]
+[ext_resource type="PackedScene" uid="uid://dmmb7uew78n3w" path="res://Model/PSX Mega Pack II/Models/Modular Structures/windows_hr_1.glb" id="229_78n8n"]
+[ext_resource type="PackedScene" uid="uid://cnheatprlcmpd" path="res://Model/PSX Mega Pack II/Models/Modular Structures/windows_hr_2.glb" id="230_0d4h8"]
+[ext_resource type="PackedScene" uid="uid://qlwc1f5507ah" path="res://Model/PSX Mega Pack II/Models/Modular Structures/windows_hs_1.glb" id="231_y7l70"]
+[ext_resource type="PackedScene" uid="uid://dgd1ee3ir4df8" path="res://Model/PSX Mega Pack II/Models/Modular Structures/windows_rg_1.glb" id="232_b01qm"]
+[ext_resource type="PackedScene" uid="uid://kshoaxxogams" path="res://Model/PSX Mega Pack II/Models/Modular Structures/window_hr_1.glb" id="233_aeqeu"]
+[ext_resource type="PackedScene" uid="uid://30e8nncvt3v3" path="res://Model/PSX Mega Pack II/Models/Modular Structures/window_hr_2.glb" id="234_xo7kl"]
+[ext_resource type="PackedScene" uid="uid://d0iaixxg4njgp" path="res://Model/PSX Mega Pack II/Models/Modular Structures/window_hs_1.glb" id="235_3nwcs"]
+[ext_resource type="PackedScene" uid="uid://bkdjccf4nlhbr" path="res://Model/PSX Mega Pack II/Models/Modular Structures/window_rg_1.glb" id="236_cfeng"]
+[ext_resource type="PackedScene" uid="uid://v0ggjawk81aw" path="res://Model/PSX Mega Pack II/Models/Modular Structures/window_rtx_1.glb" id="237_ovhtl"]
+[ext_resource type="PackedScene" uid="uid://b5m86og5teind" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_1_wall_1.glb" id="238_itmrj"]
+[ext_resource type="PackedScene" uid="uid://dok3q65i55mrx" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_1_wall_1_plain.glb" id="239_21nka"]
+[ext_resource type="PackedScene" uid="uid://ckilye2vvwx0w" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_1_wall_2_1.glb" id="240_eo63x"]
+[ext_resource type="PackedScene" uid="uid://bivdtq3vpecup" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_1_wall_2_2.glb" id="241_falkx"]
+[ext_resource type="PackedScene" uid="uid://ca0jt7r0k8vuw" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_2_wall_1.glb" id="242_81xv8"]
+[ext_resource type="PackedScene" uid="uid://dejipfcmxrkhf" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_2_wall_1_plain.glb" id="243_t78ui"]
+[ext_resource type="PackedScene" uid="uid://5w3nd37pcswf" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_2_wall_2_1.glb" id="244_54f3b"]
+[ext_resource type="PackedScene" uid="uid://cqgsxwew1twoq" path="res://Model/PSX Mega Pack/Models/Modular Structures/arc_2_wall_2_2.glb" id="245_0au4r"]
+[ext_resource type="PackedScene" uid="uid://byehrr8qfn6wm" path="res://Model/PSX Mega Pack/Models/Modular Structures/bars_metal_1.glb" id="246_1jj7w"]
+[ext_resource type="PackedScene" uid="uid://ba7oo3cteg13" path="res://Model/PSX Mega Pack/Models/Modular Structures/bars_metal_2.glb" id="247_wu2r0"]
+[ext_resource type="PackedScene" uid="uid://cv004pbf4xmxc" path="res://Model/PSX Mega Pack/Models/Modular Structures/beam_1.glb" id="248_kptgt"]
+[ext_resource type="PackedScene" uid="uid://kcbt15vdwmhy" path="res://Model/PSX Mega Pack/Models/Modular Structures/beam_2.glb" id="249_juo3t"]
+[ext_resource type="PackedScene" uid="uid://trcfh7tyqpta" path="res://Model/PSX Mega Pack/Models/Modular Structures/beam_4.glb" id="250_u3w08"]
+[ext_resource type="PackedScene" uid="uid://wgpq4701rc8g" path="res://Model/PSX Mega Pack/Models/Modular Structures/beam_5.glb" id="251_364ph"]
+[ext_resource type="PackedScene" uid="uid://brra73m2sxseg" path="res://Model/PSX Mega Pack/Models/Modular Structures/catwalk_1.glb" id="252_f4da3"]
+[ext_resource type="PackedScene" uid="uid://cfcvogtkj5sqs" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_1.glb" id="253_hnehw"]
+[ext_resource type="PackedScene" uid="uid://di1wyiwjgob1" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_1_1.glb" id="254_jh2rq"]
+[ext_resource type="PackedScene" uid="uid://dxr2t65d7nwcm" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_1_half.glb" id="255_7gynm"]
+[ext_resource type="PackedScene" uid="uid://bsk7va324e7ku" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_1_plain.glb" id="256_eciui"]
+[ext_resource type="PackedScene" uid="uid://c8w3vve8ks6xv" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_2.glb" id="257_vcwlc"]
+[ext_resource type="PackedScene" uid="uid://dp8ul8pe3jvuf" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_2_1.glb" id="258_cpin2"]
+[ext_resource type="PackedScene" uid="uid://kkp43tl0b5ch" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_2_1_half.glb" id="259_fcml0"]
+[ext_resource type="PackedScene" uid="uid://bjyeeyx8noft8" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_2_2_half.glb" id="260_bonfc"]
+[ext_resource type="PackedScene" uid="uid://c0crpqorktraa" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_2_wide.glb" id="261_b51pq"]
+[ext_resource type="PackedScene" uid="uid://c2q2ra3o33lqm" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_3_half.glb" id="262_58nyo"]
+[ext_resource type="PackedScene" uid="uid://c1va8ehiql3hb" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_3_wide.glb" id="263_7lw83"]
+[ext_resource type="PackedScene" uid="uid://r4eklfcvvv4d" path="res://Model/PSX Mega Pack/Models/Modular Structures/doorway_door_mp_1.glb" id="264_6rwml"]
+[ext_resource type="PackedScene" uid="uid://b6po5ulfojroh" path="res://Model/PSX Mega Pack/Models/Modular Structures/double_single_doorway_1.glb" id="265_jg5pf"]
+[ext_resource type="PackedScene" uid="uid://b7jiw8nqakp8r" path="res://Model/PSX Mega Pack/Models/Modular Structures/double_single_doorway_2.glb" id="266_qbe37"]
+[ext_resource type="PackedScene" uid="uid://bbrppq34c70gt" path="res://Model/PSX Mega Pack/Models/Modular Structures/double_single_doorway_2_1.glb" id="267_1vlqr"]
+[ext_resource type="PackedScene" uid="uid://dmib4htuaha56" path="res://Model/PSX Mega Pack/Models/Modular Structures/double_single_doorway_3.glb" id="268_68k8n"]
+[ext_resource type="PackedScene" uid="uid://be3foev4ldhne" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_1.glb" id="269_vnmqo"]
+[ext_resource type="PackedScene" uid="uid://bhi3f27kpa5t5" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_2.glb" id="270_atpm8"]
+[ext_resource type="PackedScene" uid="uid://ch4t7qfnmkcj4" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_doorway_1.glb" id="271_uhpas"]
+[ext_resource type="PackedScene" uid="uid://8306tkgw6flc" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_doorway_2.glb" id="272_ryjij"]
+[ext_resource type="PackedScene" uid="uid://c0xa3852fnuj8" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_doorway_2_1.glb" id="273_11tr3"]
+[ext_resource type="PackedScene" uid="uid://dweaws0yv7e6w" path="res://Model/PSX Mega Pack/Models/Modular Structures/elevator_doorway_3.glb" id="274_e7au0"]
+[ext_resource type="PackedScene" uid="uid://jmh3gb5cmwmi" path="res://Model/PSX Mega Pack/Models/Modular Structures/floor_ceiling_1.glb" id="275_qxj0y"]
+[ext_resource type="PackedScene" uid="uid://dymm1s55dqdb8" path="res://Model/PSX Mega Pack/Models/Modular Structures/floor_ceiling_2.glb" id="276_w74se"]
+[ext_resource type="PackedScene" uid="uid://c2fp1g7ca7hkt" path="res://Model/PSX Mega Pack/Models/Modular Structures/floor_ceiling_3.glb" id="277_mdapm"]
+[ext_resource type="PackedScene" uid="uid://cb4v0ws3rj61j" path="res://Model/PSX Mega Pack/Models/Modular Structures/half_arc_pillar_1_wall_1_plain.glb" id="278_cvmke"]
+[ext_resource type="PackedScene" uid="uid://cw4ft6g0162lx" path="res://Model/PSX Mega Pack/Models/Modular Structures/half_arc_pillar_2_tall_wall_1_plain.glb" id="279_uoqox"]
+[ext_resource type="PackedScene" uid="uid://cj4n7kihg6aa5" path="res://Model/PSX Mega Pack/Models/Modular Structures/half_arc_pillar_2_wall_1_plain.glb" id="280_s7jq4"]
+[ext_resource type="PackedScene" uid="uid://d3fcbrahw6frh" path="res://Model/PSX Mega Pack/Models/Modular Structures/pillar_1.glb" id="281_rddys"]
+[ext_resource type="PackedScene" uid="uid://cvew10tqu1p53" path="res://Model/PSX Mega Pack/Models/Modular Structures/pillar_1_plain_1.glb" id="282_03rj2"]
+[ext_resource type="PackedScene" uid="uid://tnb2uj7rhx0m" path="res://Model/PSX Mega Pack/Models/Modular Structures/pillar_1_plain_2.glb" id="283_ojix0"]
+[ext_resource type="PackedScene" uid="uid://bcywf4av04wkm" path="res://Model/PSX Mega Pack/Models/Modular Structures/pillar_2.glb" id="284_orhbw"]
+[ext_resource type="PackedScene" uid="uid://b6iv4ujpeaka4" path="res://Model/PSX Mega Pack/Models/Modular Structures/pillar_3.glb" id="285_2bmet"]
+[ext_resource type="PackedScene" uid="uid://yw5rx2a1l0ij" path="res://Model/PSX Mega Pack/Models/Modular Structures/pipes_holder_1.glb" id="286_nypbn"]
+[ext_resource type="PackedScene" uid="uid://c05lldvo60m22" path="res://Model/PSX Mega Pack/Models/Modular Structures/pipe_valve_holder_large_2.glb" id="287_b1omo"]
+[ext_resource type="PackedScene" uid="uid://c3jygu3k37gsm" path="res://Model/PSX Mega Pack/Models/Modular Structures/pipe_valve_holder_large_2_1.glb" id="288_a0osv"]
+[ext_resource type="PackedScene" uid="uid://bbo68nf3m7mak" path="res://Model/PSX Mega Pack/Models/Modular Structures/side_doorway_1.glb" id="289_pp6y5"]
+[ext_resource type="PackedScene" uid="uid://tm47i2ayfmsg" path="res://Model/PSX Mega Pack/Models/Modular Structures/side_doorway_2.glb" id="290_ujgje"]
+[ext_resource type="PackedScene" uid="uid://bdepu4pp31t3v" path="res://Model/PSX Mega Pack/Models/Modular Structures/side_doorway_2_1.glb" id="291_mi312"]
+[ext_resource type="PackedScene" uid="uid://2n4q4froiewl" path="res://Model/PSX Mega Pack/Models/Modular Structures/side_doorway_3.glb" id="292_1swbo"]
+[ext_resource type="PackedScene" uid="uid://cyylyd2w0xuiw" path="res://Model/PSX Mega Pack/Models/Modular Structures/stairs_3.glb" id="293_ro5dk"]
+[ext_resource type="PackedScene" uid="uid://prla2axyt83q" path="res://Model/PSX Mega Pack/Models/Modular Structures/stairs_4.glb" id="294_jwaoa"]
+[ext_resource type="PackedScene" uid="uid://cvohoxa378d08" path="res://Model/PSX Mega Pack/Models/Modular Structures/stairs_5_concrete.glb" id="295_yvo5b"]
+[ext_resource type="PackedScene" uid="uid://wo3ieiwj53qm" path="res://Model/PSX Mega Pack/Models/Modular Structures/stairs_5_wood.glb" id="296_1a6jm"]
+[ext_resource type="PackedScene" uid="uid://bj6pw4l5ltgca" path="res://Model/PSX Mega Pack/Models/Modular Structures/stairs_mp_1.glb" id="297_diaot"]
+[ext_resource type="PackedScene" uid="uid://dyt07pecx71ss" path="res://Model/PSX Mega Pack/Models/Modular Structures/toilet_cabin_mp_1.glb" id="298_qiuk1"]
+[ext_resource type="PackedScene" uid="uid://b6sp47diselm5" path="res://Model/PSX Mega Pack/Models/Modular Structures/tunnel_1.glb" id="299_ni26o"]
+[ext_resource type="PackedScene" uid="uid://bg6fi04fbh73v" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1.glb" id="300_jw6gr"]
+[ext_resource type="PackedScene" uid="uid://dgq0y7goh2gra" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_1_half.glb" id="301_cgjwn"]
+[ext_resource type="PackedScene" uid="uid://degix7ptcmqyi" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_1_rounded_corner_1.glb" id="302_vsv4b"]
+[ext_resource type="PackedScene" uid="uid://ddegpv3fudmy7" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_2_half.glb" id="303_j6ode"]
+[ext_resource type="PackedScene" uid="uid://dqk3icax1oved" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_2_rounded_corner_1.glb" id="304_23wkn"]
+[ext_resource type="PackedScene" uid="uid://dufg2kdkvqt5t" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_3_half.glb" id="305_qn14i"]
+[ext_resource type="PackedScene" uid="uid://cn4k7100oq2m1" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_half.glb" id="306_eu841"]
+[ext_resource type="PackedScene" uid="uid://wj66pqbytxly" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_plain.glb" id="307_6stt5"]
+[ext_resource type="PackedScene" uid="uid://pekg5wcsroyl" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_rounded_corner.glb" id="308_4jcov"]
+[ext_resource type="PackedScene" uid="uid://c1okd24jdmu47" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_rounded_corner_1.glb" id="309_xl5ao"]
+[ext_resource type="PackedScene" uid="uid://bxpu8takti25t" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_rounded_corner_1_1.glb" id="310_yd38i"]
+[ext_resource type="PackedScene" uid="uid://b5qpumscmr2vy" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_rounded_corner_1_2.glb" id="311_mxlk7"]
+[ext_resource type="PackedScene" uid="uid://bk4bxdl6umo6w" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_tunnel_hole.glb" id="312_46lt7"]
+[ext_resource type="PackedScene" uid="uid://bhrv58glugsco" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_tunnel_hole_1.glb" id="313_eiwnm"]
+[ext_resource type="PackedScene" uid="uid://c702ymkdem7r6" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_1_tunnel_hole_2.glb" id="314_e1cay"]
+[ext_resource type="PackedScene" uid="uid://bpror1wjjqv6p" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_2_1.glb" id="315_cijpf"]
+[ext_resource type="PackedScene" uid="uid://2n26tyj0e0lg" path="res://Model/PSX Mega Pack/Models/Modular Structures/wall_2_2.glb" id="316_i4fkp"]
+[ext_resource type="PackedScene" uid="uid://bh5rg1kheuho6" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_1_single.glb" id="317_mfvwf"]
+[ext_resource type="PackedScene" uid="uid://d2urgyaqdtkma" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_1_single_frame_only.glb" id="318_k14a0"]
+[ext_resource type="PackedScene" uid="uid://ff1e6f1o4nn6" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_1_single_no_glass.glb" id="319_jn5ln"]
+[ext_resource type="PackedScene" uid="uid://bw5eqqt3mutyn" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_1_double.glb" id="320_jwqol"]
+[ext_resource type="PackedScene" uid="uid://cyess3kd1ttph" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_1_single.glb" id="321_pckgu"]
+[ext_resource type="PackedScene" uid="uid://bfu2adkqmenxx" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_1_single_frame_only.glb" id="322_or3im"]
+[ext_resource type="PackedScene" uid="uid://diq7lfl0ggu0e" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_1_single_no_glass.glb" id="323_trlp8"]
+[ext_resource type="PackedScene" uid="uid://ctt2eomg70ltf" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_2_double.glb" id="324_51khu"]
+[ext_resource type="PackedScene" uid="uid://brhc5hqrwwgno" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_2_single.glb" id="325_4b0df"]
+[ext_resource type="PackedScene" uid="uid://d37rijr632ow0" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_2_single_frame_only.glb" id="326_a5iuf"]
+[ext_resource type="PackedScene" uid="uid://bynf6sdglx1ew" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_2_single_no_glass.glb" id="327_g71yl"]
+[ext_resource type="PackedScene" uid="uid://c7gxlnocra771" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_double.glb" id="328_508wl"]
+[ext_resource type="PackedScene" uid="uid://bpa0rk7pc4ccp" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_single.glb" id="329_rjfn0"]
+[ext_resource type="PackedScene" uid="uid://c843kyl0kt1xk" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_single_frame_only.glb" id="330_s7i0t"]
+[ext_resource type="PackedScene" uid="uid://byg3jv6qjqjp1" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_2_single_no_glass.glb" id="331_0m5ir"]
+[ext_resource type="PackedScene" uid="uid://cb0c435py0ax0" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_metal_bars_double.glb" id="332_fya8o"]
+[ext_resource type="PackedScene" uid="uid://bphdpos8aeuop" path="res://Model/PSX Mega Pack/Models/Modular Structures/window_metal_bars_single.glb" id="333_ogtbc"]
+
+[node name="Structure_zoo" type="Node3D"]
+
+[node name="boiler_hx_42" type="Node3D" parent="." instance=ExtResource("1_mg822")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.123337, 0, -30.018164)
+
+[node name="platform_mx_12" type="Node3D" parent="." instance=ExtResource("2_iqcwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.56187, 0, -30.778164)
+
+[node name="rusty_crowbar_mx_12" type="Node3D" parent="." instance=ExtResource("3_gv0ce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.873634, 0, -32.090916)
+
+[node name="rusty_crowbar_mx_1_12" type="Node3D" parent="." instance=ExtResource("4_7h17x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.0692, 0, -32.090916)
+
+[node name="warehouse_hl_12" type="Node3D" parent="." instance=ExtResource("5_6p8n8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.351532, 0, -26.028164)
+
+[node name="warehouse_hl_1_frame_piece2" type="Node3D" parent="." instance=ExtResource("6_c1uv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.950066, 0, -32.028164)
+
+[node name="water_tower_hm_12" type="Node3D" parent="." instance=ExtResource("7_in812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.2036023, 0, -28.633163)
+
+[node name="garages_block_hr_12" type="Node3D" parent="." instance=ExtResource("8_0v5rf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.342863, 0, -28.778162)
+
+[node name="garage_hl_12" type="Node3D" parent="." instance=ExtResource("9_bp1t7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.14433, 0, -29.183163)
+
+[node name="garage_hl_22" type="Node3D" parent="." instance=ExtResource("10_mb8sa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.155788, 0, -28.778164)
+
+[node name="garage_hm_12" type="Node3D" parent="." instance=ExtResource("11_va0et")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.367252, 0, -29.183163)
+
+[node name="garage_hm_22" type="Node3D" parent="." instance=ExtResource("12_2kvwk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.37871, 0, -28.778164)
+
+[node name="shed_ax_12" type="Node3D" parent="." instance=ExtResource("13_ljysd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.124077, 0, -17.277657)
+
+[node name="shed_ax_22" type="Node3D" parent="." instance=ExtResource("14_260gw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.767056, 0, -17.277655)
+
+[node name="shed_ax_32" type="Node3D" parent="." instance=ExtResource("15_m0qeg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.373, 0, -17.277653)
+
+[node name="shed_ax_42" type="Node3D" parent="." instance=ExtResource("16_qwflu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.978941, 0, -17.277657)
+
+[node name="warehouse_mx_12" type="Node3D" parent="." instance=ExtResource("17_gmfy4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.481182, 0, -10.877655)
+
+[node name="warehouse_mx_22" type="Node3D" parent="." instance=ExtResource("18_7par1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2797165, 0, -9.577656)
+
+[node name="warehouse_mx_32" type="Node3D" parent="." instance=ExtResource("19_qqnhi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9217477, 0, -10.877655)
+
+[node name="warehouse_mx_42" type="Node3D" parent="." instance=ExtResource("20_fi2u0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.123215, 0, -6.177659)
+
+[node name="warehouse_mx_4_12" type="Node3D" parent="." instance=ExtResource("21_4ta30")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.324684, 0, -6.177655)
+
+[node name="door_hr_62" type="Node3D" parent="." instance=ExtResource("22_unf44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.52615, 0, -18.577656)
+
+[node name="door_hr_82" type="Node3D" parent="." instance=ExtResource("23_42q38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.327618, 0, -18.567656)
+
+[node name="door_hr_122" type="Node3D" parent="." instance=ExtResource("24_sqry1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.12909, 0, -18.57764)
+
+[node name="door_hr_132" type="Node3D" parent="." instance=ExtResource("25_mncij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.930553, 0, -18.577656)
+
+[node name="door_hr_142" type="Node3D" parent="." instance=ExtResource("26_xuky6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.383335, 0, 7.4228554)
+
+[node name="gate_12" type="Node3D" parent="." instance=ExtResource("27_qu8ja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.58187, 0, 7.4228554)
+
+[node name="asphalt_hr_12" type="Node3D" parent="." instance=ExtResource("28_c8bx4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.780407, 0, 9.422855)
+
+[node name="asphalt_hr_1_large2" type="Node3D" parent="." instance=ExtResource("29_kn2sd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.978943, 0, 13.422855)
+
+[node name="asphalt_hr_22" type="Node3D" parent="." instance=ExtResource("30_wynmn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.177479, 0, 9.422855)
+
+[node name="asphalt_hr_32" type="Node3D" parent="." instance=ExtResource("31_nba7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.376015, 0, 9.422855)
+
+[node name="beam_hc_horizonatal_12" type="Node3D" parent="." instance=ExtResource("32_7rb4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5745506, 0, 7.5728517)
+
+[node name="beam_hc_horizonatal_22" type="Node3D" parent="." instance=ExtResource("33_l6rb6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2269135, 0, 7.5728517)
+
+[node name="beam_hc_vertical_12" type="Node3D" parent="." instance=ExtResource("34_1h4ua")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.328378, 0, 7.6728554)
+
+[node name="beam_hc_vertical_22" type="Node3D" parent="." instance=ExtResource("35_ijtsy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.804843, 0, 7.6728554)
+
+[node name="beam_hl_12" type="Node3D" parent="." instance=ExtResource("36_4jkda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.981308, 0, 7.5728564)
+
+[node name="beam_rtx_12" type="Node3D" parent="." instance=ExtResource("37_erp30")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.882772, 0, 9.422855)
+
+[node name="beam_rtx_2_pipes2" type="Node3D" parent="." instance=ExtResource("38_jd0xe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.244236, 0, 9.422855)
+
+[node name="concrete_pipe_hm_1_end2" type="Node3D" parent="." instance=ExtResource("39_d3tjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.452412, 0, 9.522856)
+
+[node name="concrete_pipe_hm_1_end_bars_12" type="Node3D" parent="." instance=ExtResource("40_n3l2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.390589, 0, 7.4228554)
+
+[node name="concrete_pipe_hm_1_middle2" type="Node3D" parent="." instance=ExtResource("41_0aos3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.202053, 0, 9.522856)
+
+[node name="doorway_hr_12" type="Node3D" parent="." instance=ExtResource("42_elv6v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.00352, 0, 7.6328554)
+
+[node name="doorway_hr_1_wide2" type="Node3D" parent="." instance=ExtResource("43_lisqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.80499, 0, 7.6328554)
+
+[node name="doorway_hr_2_regular2" type="Node3D" parent="." instance=ExtResource("44_4xugv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.606457, 0, 7.6328554)
+
+[node name="doorway_hr_2_wide2" type="Node3D" parent="." instance=ExtResource("45_qhqvp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 20.833364)
+
+[node name="doorway_hr_3_regular2" type="Node3D" parent="." instance=ExtResource("46_bjona")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 20.833364)
+
+[node name="doorway_hs_1_regular2" type="Node3D" parent="." instance=ExtResource("47_72oda")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780407, 0, 20.833363)
+
+[node name="doorway_hs_1_wide2" type="Node3D" parent="." instance=ExtResource("48_tmaog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978943, 0, 20.823364)
+
+[node name="doorway_rg_1_regular2" type="Node3D" parent="." instance=ExtResource("49_yp7og")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.177479, 0, 20.833363)
+
+[node name="doorway_rg_1_wide2" type="Node3D" parent="." instance=ExtResource("50_11kru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.376015, 0, 20.833364)
+
+[node name="doorway_rg_2_wide2" type="Node3D" parent="." instance=ExtResource("51_ne6js")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.574551, 0, 20.823364)
+
+[node name="doorway_rtx_1_wide2" type="Node3D" parent="." instance=ExtResource("52_0cxnw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7730865, 0, 20.823364)
+
+[node name="doorway_rx_12" type="Node3D" parent="." instance=ExtResource("53_ut345")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028377533, 0, 20.853363)
+
+[node name="floor_ceiling_hr_12" type="Node3D" parent="." instance=ExtResource("54_1ciox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8298416, 0, 22.623363)
+
+[node name="floor_ceiling_hr_2_hole2" type="Node3D" parent="." instance=ExtResource("55_ah0t7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.631306, 0, 22.623363)
+
+[node name="floor_ceiling_hr_32" type="Node3D" parent="." instance=ExtResource("56_sprvo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.43277, 0, 22.623363)
+
+[node name="floor_ceiling_hr_42" type="Node3D" parent="." instance=ExtResource("57_r6g8b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.234234, 0, 22.623363)
+
+[node name="floor_ceiling_hr_52" type="Node3D" parent="." instance=ExtResource("58_8frq4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.035702, 0, 22.623363)
+
+[node name="floor_ceiling_hr_5_m1a_12" type="Node3D" parent="." instance=ExtResource("59_p4l2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.83717, 0, 22.623363)
+
+[node name="floor_ceiling_hr_5_m2a_12" type="Node3D" parent="." instance=ExtResource("60_7h8ih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.638638, 0, 22.623363)
+
+[node name="floor_ceiling_hr_62" type="Node3D" parent="." instance=ExtResource("61_evhkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.440105, 0, 22.623363)
+
+[node name="floor_ceiling_hs_1_slope2" type="Node3D" parent="." instance=ExtResource("62_0wmjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 27.823872)
+
+[node name="floor_ceiling_hs_2_slope2" type="Node3D" parent="." instance=ExtResource("63_nyqeo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 27.823872)
+
+[node name="floor_ceiling_hs_3_slope2" type="Node3D" parent="." instance=ExtResource("64_n16d8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780407, 0, 27.823872)
+
+[node name="floor_ceiling_hs_4_slope2" type="Node3D" parent="." instance=ExtResource("65_j7jc2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978943, 0, 27.823872)
+
+[node name="floor_ceiling_hy_12" type="Node3D" parent="." instance=ExtResource("66_ktg6s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.177479, 0, 27.823872)
+
+[node name="floor_ceiling_rtx_12" type="Node3D" parent="." instance=ExtResource("67_td6dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.376015, 0, 27.823872)
+
+[node name="floor_ceiling_rtx_1_corner2" type="Node3D" parent="." instance=ExtResource("68_13p6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.574551, 0, 27.823872)
+
+[node name="floor_ceiling_rtx_22" type="Node3D" parent="." instance=ExtResource("69_0wun0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7730865, 0, 27.823872)
+
+[node name="floor_ceiling_rtx_32" type="Node3D" parent="." instance=ExtResource("70_1o8k4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028377533, 0, 27.823872)
+
+[node name="floor_ceiling_rx_12" type="Node3D" parent="." instance=ExtResource("71_nt3ox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8298416, 0, 27.823872)
+
+[node name="garage_door_frame_hr_12" type="Node3D" parent="." instance=ExtResource("72_7vsya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.631306, 0, 26.023872)
+
+[node name="garage_door_frame_hr_22" type="Node3D" parent="." instance=ExtResource("73_qk80p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.432766, 0, 26.023872)
+
+[node name="garage_door_frame_hs_12" type="Node3D" parent="." instance=ExtResource("74_bcvvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.234234, 0, 26.023872)
+
+[node name="garage_door_frame_hs_22" type="Node3D" parent="." instance=ExtResource("75_nwkg4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.0357, 0, 26.023872)
+
+[node name="garage_door_frame_rg_12" type="Node3D" parent="." instance=ExtResource("76_shnm6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.83717, 0, 26.023872)
+
+[node name="garage_door_frame_rg_22" type="Node3D" parent="." instance=ExtResource("77_jo0c0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 31.22438)
+
+[node name="pillar_ac_32" type="Node3D" parent="." instance=ExtResource("78_1f83t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.28187, 0, 31.324379)
+
+[node name="pillar_ax_32" type="Node3D" parent="." instance=ExtResource("79_bq2vi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.880405, 0, 31.324379)
+
+[node name="pillar_ay_22" type="Node3D" parent="." instance=ExtResource("80_tvnl3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.478943, 0, 31.324379)
+
+[node name="pillar_hr_1_broken2" type="Node3D" parent="." instance=ExtResource("81_1t0jm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.07748, 0, 31.324379)
+
+[node name="pillar_hr_22" type="Node3D" parent="." instance=ExtResource("82_6eay1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.676014, 0, 31.324379)
+
+[node name="pillar_hr_42" type="Node3D" parent="." instance=ExtResource("83_otlae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.074549, 0, 31.52438)
+
+[node name="pillar_hr_52" type="Node3D" parent="." instance=ExtResource("84_6fcoj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.273085, 0, 31.52438)
+
+[node name="pillar_hr_62" type="Node3D" parent="." instance=ExtResource("85_ktttb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.47162, 0, 31.52438)
+
+[node name="pillar_hr_82" type="Node3D" parent="." instance=ExtResource("86_c1loc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.970156, 0, 31.22438)
+
+[node name="pillar_hs_1_broken2" type="Node3D" parent="." instance=ExtResource("87_acbsj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.668694, 0, 31.324379)
+
+[node name="pillar_hs_22" type="Node3D" parent="." instance=ExtResource("88_c5kdl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.26723, 0, 31.324379)
+
+[node name="pillar_hs_42" type="Node3D" parent="." instance=ExtResource("89_hajpk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.665765, 0, 31.52438)
+
+[node name="pillar_hs_52" type="Node3D" parent="." instance=ExtResource("90_x8n34")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.864301, 0, 31.52438)
+
+[node name="pillar_hs_62" type="Node3D" parent="." instance=ExtResource("91_w7lap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.062837, 0, 31.52438)
+
+[node name="pillar_hs_72" type="Node3D" parent="." instance=ExtResource("92_y55e2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7613726, 0, 31.52438)
+
+[node name="pillar_hs_82" type="Node3D" parent="." instance=ExtResource("93_iv04p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7599075, 0, 31.22438)
+
+[node name="pillar_rgx_12" type="Node3D" parent="." instance=ExtResource("94_8lxwn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55844194, 0, 31.22438)
+
+[node name="pillar_rgx_22" type="Node3D" parent="." instance=ExtResource("95_sr2e6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7430236, 0, 31.324379)
+
+[node name="pillar_rgx_32" type="Node3D" parent="." instance=ExtResource("96_6cna7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1444864, 0, 31.324379)
+
+[node name="pillar_rg_1_broken2" type="Node3D" parent="." instance=ExtResource("97_v2pcn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.545949, 0, 31.324379)
+
+[node name="pillar_rg_22" type="Node3D" parent="." instance=ExtResource("98_pf0c2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.947412, 0, 31.324379)
+
+[node name="pillar_rg_42" type="Node3D" parent="." instance=ExtResource("99_r3rou")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.548873, 0, 31.52438)
+
+[node name="pillar_rg_52" type="Node3D" parent="." instance=ExtResource("100_x0mk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.350337, 0, 31.52438)
+
+[node name="pillar_rg_62" type="Node3D" parent="." instance=ExtResource("101_qhplc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.151806, 0, 31.52438)
+
+[node name="pillar_rg_72" type="Node3D" parent="." instance=ExtResource("102_s6cd4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.453274, 0, 31.52438)
+
+[node name="pillar_rg_82" type="Node3D" parent="." instance=ExtResource("103_0bd47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.454742, 0, 31.22438)
+
+[node name="pillar_rg_92" type="Node3D" parent="." instance=ExtResource("104_k6fuh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.756203, 0, 31.52438)
+
+[node name="pillar_rg_102" type="Node3D" parent="." instance=ExtResource("105_qopmn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.35767, 0, 31.52438)
+
+[node name="pillar_rtx_12" type="Node3D" parent="." instance=ExtResource("106_nd2f2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.15913, 0, 31.52438)
+
+[node name="pillar_rtx_22" type="Node3D" parent="." instance=ExtResource("107_uu5de")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.660595, 0, 31.52438)
+
+[node name="pillar_rx_82" type="Node3D" parent="." instance=ExtResource("108_gft6q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.862076, 0, 31.22438)
+
+[node name="pipes_hr_5_middle2" type="Node3D" parent="." instance=ExtResource("109_22ob8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.863537, 0, 31.02439)
+
+[node name="pipe_bx_12" type="Node3D" parent="." instance=ExtResource("110_yh6k3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.003002, 0, 33.024384)
+
+[node name="pipe_bx_22" type="Node3D" parent="." instance=ExtResource("111_co3vn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.14247, 0, 33.024384)
+
+[node name="pipe_bx_32" type="Node3D" parent="." instance=ExtResource("112_sa01y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.045338, 0, 36.562897)
+
+[node name="pipe_bx_42" type="Node3D" parent="." instance=ExtResource("113_0xed2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.243862, 0, 36.562897)
+
+[node name="pipe_cx_12" type="Node3D" parent="." instance=ExtResource("114_04trn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.972393, 0, 38.2249)
+
+[node name="pipe_cx_22" type="Node3D" parent="." instance=ExtResource("115_q5p7u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.700924, 0, 38.2249)
+
+[node name="pipe_cx_32" type="Node3D" parent="." instance=ExtResource("116_loij5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.429457, 0, 36.694893)
+
+[node name="pipe_cx_42" type="Node3D" parent="." instance=ExtResource("117_jtou4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.627983, 0, 36.694893)
+
+[node name="pipe_cx_52" type="Node3D" parent="." instance=ExtResource("118_xfvoo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.138514, 0, 38.2249)
+
+[node name="pipe_dx_12" type="Node3D" parent="." instance=ExtResource("119_lugy1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.179047, 0, 38.2249)
+
+[node name="pipe_dx_22" type="Node3D" parent="." instance=ExtResource("120_7cno0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2195835, 0, 38.2249)
+
+[node name="platform_ax_12" type="Node3D" parent="." instance=ExtResource("121_oewhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.730117, 0, 38.224895)
+
+[node name="platform_ax_22" type="Node3D" parent="." instance=ExtResource("122_y3l0g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9004784, 0, 38.224895)
+
+[node name="platform_bx_12" type="Node3D" parent="." instance=ExtResource("123_3c3dk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0408387, 0, 38.224895)
+
+[node name="platform_bx_22" type="Node3D" parent="." instance=ExtResource("124_i0jgv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8206269, 0, 38.224895)
+
+[node name="platform_b_handrail_12" type="Node3D" parent="." instance=ExtResource("125_crnm4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6620917, 0, 38.224895)
+
+[node name="platform_b_handrail_1_12" type="Node3D" parent="." instance=ExtResource("126_dcp6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5435576, 0, 38.224895)
+
+[node name="platform_b_handrail_22" type="Node3D" parent="." instance=ExtResource("127_n8u76")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.425023, 0, 38.224895)
+
+[node name="platform_cx_12" type="Node3D" parent="." instance=ExtResource("128_rm2xt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.38649, 0, 38.224895)
+
+[node name="platform_large_mx_12" type="Node3D" parent="." instance=ExtResource("129_dhe8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.217957, 0, 40.224895)
+
+[node name="platform_small_mx_12" type="Node3D" parent="." instance=ExtResource("130_tno7a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.019424, 0, 38.224895)
+
+[node name="ramp_platform_slim_mx_12" type="Node3D" parent="." instance=ExtResource("131_op1he")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.520893, 0, 36.224895)
+
+[node name="ramp_platform_wide_mx_12" type="Node3D" parent="." instance=ExtResource("132_ftbke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.722366, 0, 38.524906)
+
+[node name="roof_bx_12" type="Node3D" parent="." instance=ExtResource("133_676m7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.52383, 0, 38.224895)
+
+[node name="roof_bx_1_corner_12" type="Node3D" parent="." instance=ExtResource("134_b5ape")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.7253, 0, 38.624897)
+
+[node name="roof_bx_1_corner_22" type="Node3D" parent="." instance=ExtResource("135_h7mhd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 47.825405)
+
+[node name="roof_bx_1_side2" type="Node3D" parent="." instance=ExtResource("136_junlu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.18187, 0, 47.825405)
+
+[node name="roof_bx_22" type="Node3D" parent="." instance=ExtResource("137_evwe7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.38041, 0, 47.425404)
+
+[node name="roof_hr_3_middle_angle2" type="Node3D" parent="." instance=ExtResource("138_b7a0t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.578943, 0, 47.425404)
+
+[node name="roof_hr_3_side_1_angle2" type="Node3D" parent="." instance=ExtResource("139_rqjkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.97748, 0, 47.425404)
+
+[node name="roof_hr_3_side_2_angle_corner_12" type="Node3D" parent="." instance=ExtResource("140_dx1s4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.376015, 0, 46.16614)
+
+[node name="roof_hr_3_side_2_angle_corner_22" type="Node3D" parent="." instance=ExtResource("141_rrsm7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.774551, 0, 45.425404)
+
+[node name="roof_hr_3_side_2_angle_edge_12" type="Node3D" parent="." instance=ExtResource("142_1scu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.973087, 0, 46.16614)
+
+[node name="roof_hr_3_side_2_angle_edge_22" type="Node3D" parent="." instance=ExtResource("143_btag6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.171623, 0, 45.425404)
+
+[node name="roof_mh_12" type="Node3D" parent="." instance=ExtResource("144_w4ii1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3701591, 0, 47.425404)
+
+[node name="roof_mh_22" type="Node3D" parent="." instance=ExtResource("145_yrn6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.431305, 0, 47.425404)
+
+[node name="roof_mh_32" type="Node3D" parent="." instance=ExtResource("146_rf6ax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.23277, 0, 47.425404)
+
+[node name="roof_mh_4_a_12" type="Node3D" parent="." instance=ExtResource("147_rew2h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.034237, 0, 47.425404)
+
+[node name="roof_mh_4_a_22" type="Node3D" parent="." instance=ExtResource("148_navuo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.835705, 0, 49.425404)
+
+[node name="roof_mh_4_a_32" type="Node3D" parent="." instance=ExtResource("149_hef86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.637173, 0, 51.425404)
+
+[node name="roof_mh_4_a_42" type="Node3D" parent="." instance=ExtResource("150_k0n2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.43864, 0, 53.425404)
+
+[node name="roof_mh_4_b_12" type="Node3D" parent="." instance=ExtResource("151_qs1y0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.383335, 0, 64.625916)
+
+[node name="roof_mh_4_b_22" type="Node3D" parent="." instance=ExtResource("152_jrpxy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.58187, 0, 66.625916)
+
+[node name="roof_mh_4_b_32" type="Node3D" parent="." instance=ExtResource("153_ba17m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.780405, 0, 68.625916)
+
+[node name="roof_mh_4_b_42" type="Node3D" parent="." instance=ExtResource("154_vg67o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.978939, 0, 70.625916)
+
+[node name="roof_mx_12" type="Node3D" parent="." instance=ExtResource("155_llyp0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.977475, 0, 64.625916)
+
+[node name="roof_small_hr_12" type="Node3D" parent="." instance=ExtResource("156_gsq8m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.97600913, 0, 62.62591)
+
+[node name="roof_small_hr_22" type="Node3D" parent="." instance=ExtResource("157_o11js")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8254547, 0, 62.62591)
+
+[node name="roof_small_hr_32" type="Node3D" parent="." instance=ExtResource("158_nkf6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.626919, 0, 62.62591)
+
+[node name="seam_hl_22" type="Node3D" parent="." instance=ExtResource("159_vjq4r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.428383, 0, 64.625916)
+
+[node name="seam_hr_12" type="Node3D" parent="." instance=ExtResource("160_kxbmq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.829844, 0, 66.625916)
+
+[node name="structure_piece_rg_12" type="Node3D" parent="." instance=ExtResource("161_m3pd6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.031307, 0, 66.625916)
+
+[node name="structure_piece_rg_1_12" type="Node3D" parent="." instance=ExtResource("162_auwti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.832775, 0, 66.625916)
+
+[node name="structure_piece_rg_22" type="Node3D" parent="." instance=ExtResource("163_d8r2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.634243, 0, 66.625916)
+
+[node name="wall_hr_12" type="Node3D" parent="." instance=ExtResource("164_v5mim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 80.02642)
+
+[node name="wall_hr_1_double2" type="Node3D" parent="." instance=ExtResource("165_b74sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 80.02642)
+
+[node name="wall_hr_1_hole_12" type="Node3D" parent="." instance=ExtResource("166_a6pvd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780407, 0, 83.72642)
+
+[node name="wall_hr_1_hole_22" type="Node3D" parent="." instance=ExtResource("167_w4l2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978943, 0, 83.72642)
+
+[node name="wall_hr_1_m1a_12" type="Node3D" parent="." instance=ExtResource("168_6g5vh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.177479, 0, 81.62642)
+
+[node name="wall_hr_1_m1a_22" type="Node3D" parent="." instance=ExtResource("169_y0vwr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.376015, 0, 81.62642)
+
+[node name="wall_hr_1_m2a_12" type="Node3D" parent="." instance=ExtResource("170_dxbce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.574551, 0, 81.826416)
+
+[node name="wall_hr_1_m2a_22" type="Node3D" parent="." instance=ExtResource("171_oj0x4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7730865, 0, 81.826416)
+
+[node name="wall_hr_1_m_22" type="Node3D" parent="." instance=ExtResource("172_3fse7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02837801, 0, 80.076416)
+
+[node name="wall_hr_1_t_12" type="Node3D" parent="." instance=ExtResource("173_yh8tf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8298416, 0, 80.02642)
+
+[node name="wall_hr_1_t_22" type="Node3D" parent="." instance=ExtResource("174_fkxkr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.631307, 0, 80.02642)
+
+[node name="wall_hr_22" type="Node3D" parent="." instance=ExtResource("175_o80pb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.432774, 0, 80.02642)
+
+[node name="wall_hr_152" type="Node3D" parent="." instance=ExtResource("176_byoef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.234234, 0, 80.02642)
+
+[node name="wall_hr_15_double2" type="Node3D" parent="." instance=ExtResource("177_1kfkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.035702, 0, 80.02642)
+
+[node name="wall_hs_12" type="Node3D" parent="." instance=ExtResource("178_lki7x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.83717, 0, 80.02642)
+
+[node name="wall_hs_1_double2" type="Node3D" parent="." instance=ExtResource("179_7r16i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.638638, 0, 80.02641)
+
+[node name="wall_hs_1_hole_12" type="Node3D" parent="." instance=ExtResource("180_5bijn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.440105, 0, 83.72642)
+
+[node name="wall_hs_1_hole_22" type="Node3D" parent="." instance=ExtResource("181_d75yi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 89.22694)
+
+[node name="wall_hs_1_m1a_12" type="Node3D" parent="." instance=ExtResource("182_mhydw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 87.12694)
+
+[node name="wall_hs_1_m2a_12" type="Node3D" parent="." instance=ExtResource("183_8u3bj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780407, 0, 87.326935)
+
+[node name="wall_hs_1_m_22" type="Node3D" parent="." instance=ExtResource("184_dmwdr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978941, 0, 85.576935)
+
+[node name="wall_hs_1_t_12" type="Node3D" parent="." instance=ExtResource("185_fq1gc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.177475, 0, 85.52694)
+
+[node name="wall_hs_1_t_22" type="Node3D" parent="." instance=ExtResource("186_nii2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.37601, 0, 85.52694)
+
+[node name="wall_hs_152" type="Node3D" parent="." instance=ExtResource("187_w0p1a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.574543, 0, 85.52694)
+
+[node name="wall_hs_15_double2" type="Node3D" parent="." instance=ExtResource("188_ehrdg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.773079, 0, 85.52694)
+
+[node name="wall_rg_12" type="Node3D" parent="." instance=ExtResource("189_o2esw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028385162, 0, 85.52694)
+
+[node name="wall_rg_1_angle2" type="Node3D" parent="." instance=ExtResource("190_0yb0i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8298492, 0, 85.52694)
+
+[node name="wall_rg_1_double2" type="Node3D" parent="." instance=ExtResource("191_s5npp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.631313, 0, 85.52693)
+
+[node name="wall_rg_1_hole_12" type="Node3D" parent="." instance=ExtResource("192_1vkk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.432777, 0, 89.22694)
+
+[node name="wall_rg_1_hole_22" type="Node3D" parent="." instance=ExtResource("193_371ej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.234241, 0, 89.22694)
+
+[node name="wall_rg_1_m1a_12" type="Node3D" parent="." instance=ExtResource("194_rr62f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.035702, 0, 87.12694)
+
+[node name="wall_rg_1_m2a_12" type="Node3D" parent="." instance=ExtResource("195_ctjlo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.83717, 0, 87.326935)
+
+[node name="wall_rg_1_m_22" type="Node3D" parent="." instance=ExtResource("196_kh45i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.638638, 0, 85.576935)
+
+[node name="wall_rg_1_t_12" type="Node3D" parent="." instance=ExtResource("197_ap28b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.440105, 0, 85.52694)
+
+[node name="wall_rg_1_t_22" type="Node3D" parent="." instance=ExtResource("198_m44jw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 91.02744)
+
+[node name="wall_rg_152" type="Node3D" parent="." instance=ExtResource("199_lomw7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 91.02744)
+
+[node name="wall_rg_15_double2" type="Node3D" parent="." instance=ExtResource("200_ttxqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780403, 0, 91.02744)
+
+[node name="wall_rtx_12" type="Node3D" parent="." instance=ExtResource("201_5t6vn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978941, 0, 91.02744)
+
+[node name="wall_rtx_22" type="Node3D" parent="." instance=ExtResource("202_kst1o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.177477, 0, 91.027435)
+
+[node name="wall_rx_12" type="Node3D" parent="." instance=ExtResource("203_s1pxs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.376013, 0, 91.027435)
+
+[node name="wall_rx_1_1_3_height2" type="Node3D" parent="." instance=ExtResource("204_l7iey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.574551, 0, 91.027435)
+
+[node name="wall_rx_1_1_3_height_1_2_width2" type="Node3D" parent="." instance=ExtResource("205_8okhv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7730865, 0, 91.027435)
+
+[node name="wall_rx_1_1_4_width2" type="Node3D" parent="." instance=ExtResource("206_usf1c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4716225, 0, 91.027435)
+
+[node name="wall_rx_1_1_4_width_1_3_height2" type="Node3D" parent="." instance=ExtResource("207_10s85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6701584, 0, 91.027435)
+
+[node name="wall_rx_1_2_3_height2" type="Node3D" parent="." instance=ExtResource("208_q46tx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6313057, 0, 91.027435)
+
+[node name="wall_rx_1_2_3_height_1_2_width2" type="Node3D" parent="." instance=ExtResource("209_8i3gc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.43277, 0, 91.027435)
+
+[node name="wall_rx_1_m1a_12" type="Node3D" parent="." instance=ExtResource("210_lcluq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.234234, 0, 92.62744)
+
+[node name="wall_rx_1_m1a_1_1_3_height2" type="Node3D" parent="." instance=ExtResource("211_5ruji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.035702, 0, 92.62744)
+
+[node name="wall_rx_1_m1a_1_2_3_height2" type="Node3D" parent="." instance=ExtResource("212_qbxtk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.83717, 0, 92.62744)
+
+[node name="wall_rx_1_m2a_12" type="Node3D" parent="." instance=ExtResource("213_usblf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.638638, 0, 92.82744)
+
+[node name="wall_rx_1_m2a_1_1_3_height2" type="Node3D" parent="." instance=ExtResource("214_2ay6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.440105, 0, 92.82744)
+
+[node name="wall_rx_1_m2a_1_2_3_height2" type="Node3D" parent="." instance=ExtResource("215_yy3t4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.241573, 0, 92.82744)
+
+[node name="wall_rx_22" type="Node3D" parent="." instance=ExtResource("216_g6nq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.34304, 0, 91.12744)
+
+[node name="wall_rx_42" type="Node3D" parent="." instance=ExtResource("217_8nm20")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.883335, 0, 96.527954)
+
+[node name="wall_top_part_hr_12" type="Node3D" parent="." instance=ExtResource("218_ohnee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.58187, 0, 96.22796)
+
+[node name="wall_top_part_hr_22" type="Node3D" parent="." instance=ExtResource("219_dxdlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.780407, 0, 96.427956)
+
+[node name="wall_top_part_hr_32" type="Node3D" parent="." instance=ExtResource("220_hwxgl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.978943, 0, 96.427956)
+
+[node name="wall_top_part_hs_12" type="Node3D" parent="." instance=ExtResource("221_1t8yx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.177479, 0, 96.22796)
+
+[node name="wall_top_part_hs_22" type="Node3D" parent="." instance=ExtResource("222_b8y4f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.376015, 0, 96.427956)
+
+[node name="wall_top_part_hs_32" type="Node3D" parent="." instance=ExtResource("223_f4u8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.574551, 0, 96.427956)
+
+[node name="wall_top_part_rg_12" type="Node3D" parent="." instance=ExtResource("224_gsv7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.773087, 0, 96.22796)
+
+[node name="wall_top_part_rg_22" type="Node3D" parent="." instance=ExtResource("225_f1mkr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9716225, 0, 96.427956)
+
+[node name="wall_top_part_rg_32" type="Node3D" parent="." instance=ExtResource("226_qvgu8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8298416, 0, 96.427956)
+
+[node name="warehouse_hs_1_roof_12" type="Node3D" parent="." instance=ExtResource("227_jwphq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.631306, 0, 100.027954)
+
+[node name="warehouse_hs_1_roof_22" type="Node3D" parent="." instance=ExtResource("228_crrvo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.432766, 0, 100.027954)
+
+[node name="windows_hr_12" type="Node3D" parent="." instance=ExtResource("229_78n8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.234234, 0, 96.32796)
+
+[node name="windows_hr_22" type="Node3D" parent="." instance=ExtResource("230_0d4h8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.0357, 0, 96.32796)
+
+[node name="windows_hs_12" type="Node3D" parent="." instance=ExtResource("231_y7l70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.83717, 0, 96.32796)
+
+[node name="windows_rg_12" type="Node3D" parent="." instance=ExtResource("232_b01qm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.638638, 0, 96.32796)
+
+[node name="window_hr_12" type="Node3D" parent="." instance=ExtResource("233_aeqeu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.383335, 0, 105.52846)
+
+[node name="window_hr_22" type="Node3D" parent="." instance=ExtResource("234_xo7kl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.58187, 0, 105.52846)
+
+[node name="window_hs_12" type="Node3D" parent="." instance=ExtResource("235_3nwcs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.780407, 0, 105.52846)
+
+[node name="window_rg_12" type="Node3D" parent="." instance=ExtResource("236_cfeng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.978943, 0, 105.52846)
+
+[node name="window_rtx_12" type="Node3D" parent="." instance=ExtResource("237_ovhtl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.877478, 0, 107.22844)
+
+[node name="arc_1_wall_12" type="Node3D" parent="." instance=ExtResource("238_itmrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.331015, 0, 105.45846)
+
+[node name="arc_1_wall_1_plain2" type="Node3D" parent="." instance=ExtResource("239_21nka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.529549, 0, 105.42845)
+
+[node name="arc_1_wall_2_12" type="Node3D" parent="." instance=ExtResource("240_eo63x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.728084, 0, 105.45846)
+
+[node name="arc_1_wall_2_22" type="Node3D" parent="." instance=ExtResource("241_falkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9266157, 0, 105.45846)
+
+[node name="arc_2_wall_12" type="Node3D" parent="." instance=ExtResource("242_81xv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1251478, 0, 105.45846)
+
+[node name="arc_2_wall_1_plain2" type="Node3D" parent="." instance=ExtResource("243_t78ui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6763191, 0, 105.42845)
+
+[node name="arc_2_wall_2_12" type="Node3D" parent="." instance=ExtResource("244_54f3b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.477784, 0, 105.45846)
+
+[node name="arc_2_wall_2_22" type="Node3D" parent="." instance=ExtResource("245_0au4r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.279248, 0, 105.45846)
+
+[node name="bars_metal_12" type="Node3D" parent="." instance=ExtResource("246_1jj7w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.830715, 0, 105.24845)
+
+[node name="bars_metal_22" type="Node3D" parent="." instance=ExtResource("247_wu2r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.132496, 0, 105.24845)
+
+[node name="beam_12" type="Node3D" parent="." instance=ExtResource("248_kptgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.183956, 0, 105.35845)
+
+[node name="beam_22" type="Node3D" parent="." instance=ExtResource("249_juo3t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.985424, 0, 105.45846)
+
+[node name="beam_42" type="Node3D" parent="." instance=ExtResource("250_u3w08")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.786892, 0, 105.32845)
+
+[node name="beam_52" type="Node3D" parent="." instance=ExtResource("251_364ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.588364, 0, 105.32845)
+
+[node name="catwalk_12" type="Node3D" parent="." instance=ExtResource("252_f4da3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.389828, 0, 106.228455)
+
+[node name="doorway_12" type="Node3D" parent="." instance=ExtResource("253_hnehw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.338333, 0, 110.529015)
+
+[node name="doorway_1_12" type="Node3D" parent="." instance=ExtResource("254_jh2rq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.44687, 0, 110.529015)
+
+[node name="doorway_1_half2" type="Node3D" parent="." instance=ExtResource("255_7gynm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.555405, 0, 110.529015)
+
+[node name="doorway_1_plain2" type="Node3D" parent="." instance=ExtResource("256_eciui")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.678942, 0, 110.529015)
+
+[node name="doorway_22" type="Node3D" parent="." instance=ExtResource("257_vcwlc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.802479, 0, 110.529015)
+
+[node name="doorway_2_12" type="Node3D" parent="." instance=ExtResource("258_cpin2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.911015, 0, 110.529015)
+
+[node name="doorway_2_1_half2" type="Node3D" parent="." instance=ExtResource("259_fcml0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.019548, 0, 110.529015)
+
+[node name="doorway_2_2_half2" type="Node3D" parent="." instance=ExtResource("260_bonfc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.128084, 0, 110.529015)
+
+[node name="doorway_2_wide2" type="Node3D" parent="." instance=ExtResource("261_b51pq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23662, 0, 110.529015)
+
+[node name="doorway_3_half2" type="Node3D" parent="." instance=ExtResource("262_58nyo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36015582, 0, 110.529015)
+
+[node name="doorway_3_wide2" type="Node3D" parent="." instance=ExtResource("263_7lw83")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5163097, 0, 110.529015)
+
+[node name="doorway_door_mp_12" type="Node3D" parent="." instance=ExtResource("264_6rwml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.407774, 0, 110.529015)
+
+[node name="double_single_doorway_12" type="Node3D" parent="." instance=ExtResource("265_jg5pf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.299238, 0, 110.529015)
+
+[node name="double_single_doorway_22" type="Node3D" parent="." instance=ExtResource("266_qbe37")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.190702, 0, 110.529015)
+
+[node name="double_single_doorway_2_12" type="Node3D" parent="." instance=ExtResource("267_1vlqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.082167, 0, 110.529015)
+
+[node name="double_single_doorway_32" type="Node3D" parent="." instance=ExtResource("268_68k8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.95863, 0, 110.529015)
+
+[node name="elevator_12" type="Node3D" parent="." instance=ExtResource("269_vnmqo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.090096, 0, 113.32902)
+
+[node name="elevator_22" type="Node3D" parent="." instance=ExtResource("270_atpm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.191563, 0, 113.32902)
+
+[node name="elevator_doorway_12" type="Node3D" parent="." instance=ExtResource("271_uhpas")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.038033, 0, 110.57901)
+
+[node name="elevator_doorway_22" type="Node3D" parent="." instance=ExtResource("272_ryjij")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.338333, 0, 114.689514)
+
+[node name="elevator_doorway_2_12" type="Node3D" parent="." instance=ExtResource("273_11tr3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.44687, 0, 114.689514)
+
+[node name="elevator_doorway_32" type="Node3D" parent="." instance=ExtResource("274_e7au0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.570408, 0, 114.689514)
+
+[node name="floor_ceiling_12" type="Node3D" parent="." instance=ExtResource("275_qxj0y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.718943, 0, 116.55952)
+
+[node name="floor_ceiling_22" type="Node3D" parent="." instance=ExtResource("276_w74se")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.87748, 0, 116.55952)
+
+[node name="floor_ceiling_32" type="Node3D" parent="." instance=ExtResource("277_mdapm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.036015, 0, 116.55952)
+
+[node name="half_arc_pillar_1_wall_1_plain2" type="Node3D" parent="." instance=ExtResource("278_cvmke")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.71455, 0, 114.73952)
+
+[node name="half_arc_pillar_2_tall_wall_1_plain2" type="Node3D" parent="." instance=ExtResource("279_uoqox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.413086, 0, 114.739525)
+
+[node name="half_arc_pillar_2_wall_1_plain2" type="Node3D" parent="." instance=ExtResource("280_s7jq4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6116219, 0, 114.739525)
+
+[node name="pillar_12" type="Node3D" parent="." instance=ExtResource("281_rddys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.050157696, 0, 114.79952)
+
+[node name="pillar_1_plain_12" type="Node3D" parent="." instance=ExtResource("282_03rj2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2113075, 0, 114.73952)
+
+[node name="pillar_1_plain_22" type="Node3D" parent="." instance=ExtResource("283_ojix0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.6127734, 0, 114.93952)
+
+[node name="pillar_22" type="Node3D" parent="." instance=ExtResource("284_orhbw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.074236, 0, 114.79952)
+
+[node name="pillar_32" type="Node3D" parent="." instance=ExtResource("285_2bmet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3957, 0, 114.79952)
+
+[node name="pipes_holder_12" type="Node3D" parent="." instance=ExtResource("286_nypbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.757163, 0, 114.57452)
+
+[node name="pipe_valve_holder_large_22" type="Node3D" parent="." instance=ExtResource("287_b1omo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.02277, 0, 114.53951)
+
+[node name="pipe_valve_holder_large_2_12" type="Node3D" parent="." instance=ExtResource("288_a0osv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.15252, 0, 114.53951)
+
+[node name="side_doorway_12" type="Node3D" parent="." instance=ExtResource("289_pp6y5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.163122, 0, 114.63952)
+
+[node name="side_doorway_22" type="Node3D" parent="." instance=ExtResource("290_ujgje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.054586, 0, 114.63952)
+
+[node name="side_doorway_2_12" type="Node3D" parent="." instance=ExtResource("291_mi312")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.94605, 0, 114.63952)
+
+[node name="side_doorway_32" type="Node3D" parent="." instance=ExtResource("292_1swbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.822514, 0, 114.63952)
+
+[node name="stairs_32" type="Node3D" parent="." instance=ExtResource("293_ro5dk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.65398, 0, 114.53952)
+
+[node name="stairs_42" type="Node3D" parent="." instance=ExtResource("294_jwaoa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.45545, 0, 116.53952)
+
+[node name="stairs_5_concrete2" type="Node3D" parent="." instance=ExtResource("295_yvo5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.383335, 0, 121.816605)
+
+[node name="stairs_5_wood2" type="Node3D" parent="." instance=ExtResource("296_1a6jm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.58187, 0, 121.816605)
+
+[node name="stairs_mp_12" type="Node3D" parent="." instance=ExtResource("297_diaot")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.780407, 0, 122.816605)
+
+[node name="toilet_cabin_mp_12" type="Node3D" parent="." instance=ExtResource("298_qiuk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.938946, 0, 121.316605)
+
+[node name="tunnel_12" type="Node3D" parent="." instance=ExtResource("299_ni26o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.157494, 0, 122.83661)
+
+[node name="wall_12" type="Node3D" parent="." instance=ExtResource("300_jw6gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.81103, 0, 119.90661)
+
+[node name="wall_1_1_half2" type="Node3D" parent="." instance=ExtResource("301_cgjwn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.919565, 0, 119.90661)
+
+[node name="wall_1_1_rounded_corner_12" type="Node3D" parent="." instance=ExtResource("302_vsv4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0281, 0, 121.9066)
+
+[node name="wall_1_2_half2" type="Node3D" parent="." instance=ExtResource("303_j6ode")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.091639, 0, 119.90661)
+
+[node name="wall_1_2_rounded_corner_12" type="Node3D" parent="." instance=ExtResource("304_23wkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2001743, 0, 121.9066)
+
+[node name="wall_1_3_half2" type="Node3D" parent="." instance=ExtResource("305_qn14i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27871203, 0, 119.8766)
+
+[node name="wall_1_half2" type="Node3D" parent="." instance=ExtResource("306_eu841")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5977535, 0, 119.90661)
+
+[node name="wall_1_plain2" type="Node3D" parent="." instance=ExtResource("307_6stt5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.474217, 0, 119.8766)
+
+[node name="wall_1_rounded_corner2" type="Node3D" parent="." instance=ExtResource("308_4jcov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.335683, 0, 121.8766)
+
+[node name="wall_1_rounded_corner_12" type="Node3D" parent="." instance=ExtResource("309_xl5ao")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.24215, 0, 121.9066)
+
+[node name="wall_1_rounded_corner_1_12" type="Node3D" parent="." instance=ExtResource("310_yd38i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.178612, 0, 121.9066)
+
+[node name="wall_1_rounded_corner_1_22" type="Node3D" parent="." instance=ExtResource("311_mxlk7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.115074, 0, 121.8766)
+
+[node name="wall_1_tunnel_hole2" type="Node3D" parent="." instance=ExtResource("312_46lt7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.006535, 0, 119.90146)
+
+[node name="wall_1_tunnel_hole_12" type="Node3D" parent="." instance=ExtResource("313_eiwnm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.868, 0, 119.90146)
+
+[node name="wall_1_tunnel_hole_22" type="Node3D" parent="." instance=ExtResource("314_e1cay")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.729465, 0, 119.90146)
+
+[node name="wall_2_12" type="Node3D" parent="." instance=ExtResource("315_cijpf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.338333, 0, 127.12711)
+
+[node name="wall_2_22" type="Node3D" parent="." instance=ExtResource("316_i4fkp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.44687, 0, 127.12711)
+
+[node name="window_1_single2" type="Node3D" parent="." instance=ExtResource("317_mfvwf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.570408, 0, 127.29711)
+
+[node name="window_1_single_frame_only2" type="Node3D" parent="." instance=ExtResource("318_k14a0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.708942, 0, 127.13711)
+
+[node name="window_1_single_no_glass2" type="Node3D" parent="." instance=ExtResource("319_jn5ln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.847479, 0, 127.13711)
+
+[node name="window_2_1_double2" type="Node3D" parent="." instance=ExtResource("320_jwqol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.971016, 0, 127.29711)
+
+[node name="window_2_1_single2" type="Node3D" parent="." instance=ExtResource("321_pckgu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.079554, 0, 127.29711)
+
+[node name="window_2_1_single_frame_only2" type="Node3D" parent="." instance=ExtResource("322_or3im")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1880894, 0, 127.13711)
+
+[node name="window_2_1_single_no_glass2" type="Node3D" parent="." instance=ExtResource("323_trlp8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.70337486, 0, 127.13711)
+
+[node name="window_2_2_double2" type="Node3D" parent="." instance=ExtResource("324_51khu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.594839, 0, 127.29711)
+
+[node name="window_2_2_single2" type="Node3D" parent="." instance=ExtResource("325_4b0df")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.486303, 0, 127.29711)
+
+[node name="window_2_2_single_frame_only2" type="Node3D" parent="." instance=ExtResource("326_a5iuf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.377768, 0, 127.13711)
+
+[node name="window_2_2_single_no_glass2" type="Node3D" parent="." instance=ExtResource("327_g71yl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.269232, 0, 127.13711)
+
+[node name="window_2_double2" type="Node3D" parent="." instance=ExtResource("328_508wl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.160696, 0, 127.29711)
+
+[node name="window_2_single2" type="Node3D" parent="." instance=ExtResource("329_rjfn0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.052162, 0, 127.29711)
+
+[node name="window_2_single_frame_only2" type="Node3D" parent="." instance=ExtResource("330_s7i0t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.943626, 0, 127.13711)
+
+[node name="window_2_single_no_glass2" type="Node3D" parent="." instance=ExtResource("331_0m5ir")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.83509, 0, 127.13711)
+
+[node name="window_metal_bars_double2" type="Node3D" parent="." instance=ExtResource("332_fya8o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.263336, 0, 128.7176)
+
+[node name="window_metal_bars_single2" type="Node3D" parent="." instance=ExtResource("333_ogtbc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.78187, 0, 128.7176)

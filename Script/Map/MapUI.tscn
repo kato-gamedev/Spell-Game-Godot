@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://yjn0u44ufe8c"]
+
+[ext_resource type="Script" uid="uid://46n3xthy35tx" path="res://Script/Map/MapUI.gd" id="1_mapui"]
+[ext_resource type="Texture2D" uid="uid://dptqbms6k77w4" path="res://Shader/Image/rime 2.jpg" id="1_sme1h"]
+
+[node name="MapUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_mapui")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sme1h")
+expand_mode = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 2000)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.5585038, 0.558504, 0.5585035, 1)

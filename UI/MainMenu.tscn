@@ -1,0 +1,156 @@
+[gd_scene load_steps=7 format=3 uid="uid://jmm2q65mck6g"]
+
+[ext_resource type="Texture2D" uid="uid://7kbusp6m7pko" path="res://UI/MobileStyle/background.png" id="1_otjfi"]
+[ext_resource type="Texture2D" uid="uid://ctk02ohfade6k" path="res://UI/MobileStyle/button_bg_blue.png" id="1_uahxu"]
+[ext_resource type="LabelSettings" uid="uid://bnn1h2hje12xq" path="res://UI/MobileStyle/L_MainMenuButton.tres" id="3_obtq6"]
+[ext_resource type="Texture2D" uid="uid://1yg316a2abkt" path="res://UI/MobileStyle/button_bg_green.png" id="4_t4ff4"]
+[ext_resource type="Texture2D" uid="uid://dene6ngihlv21" path="res://UI/MobileStyle/button_bg_grey.png" id="5_w5vcv"]
+[ext_resource type="Texture2D" uid="uid://bi7yi5cbjb8vp" path="res://UI/MobileStyle/button_bg_purple.png" id="6_d2d4f"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_otjfi")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -85.0
+offset_right = 153.0
+offset_bottom = 183.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+ratio = 4.91
+stretch_mode = 0
+
+[node name="PlayButton" type="TextureButton" parent="VBoxContainer/AspectRatioContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("1_uahxu")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/AspectRatioContainer/PlayButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -11.5
+offset_right = 24.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CONTINUE"
+label_settings = ExtResource("3_obtq6")
+
+[node name="AspectRatioContainer2" type="AspectRatioContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+ratio = 4.91
+stretch_mode = 0
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/AspectRatioContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("4_t4ff4")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/AspectRatioContainer2/TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -11.5
+offset_right = 24.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLAY"
+label_settings = ExtResource("3_obtq6")
+
+[node name="AspectRatioContainer3" type="AspectRatioContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+ratio = 4.91
+stretch_mode = 0
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/AspectRatioContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("5_w5vcv")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/AspectRatioContainer3/TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -11.5
+offset_right = 24.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "META"
+label_settings = ExtResource("3_obtq6")
+
+[node name="AspectRatioContainer4" type="AspectRatioContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+ratio = 4.91
+stretch_mode = 0
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/AspectRatioContainer4"]
+layout_mode = 2
+size_flags_vertical = 3
+texture_normal = ExtResource("6_d2d4f")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="VBoxContainer/AspectRatioContainer4/TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -11.5
+offset_right = 24.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "OPTIONS"
+label_settings = ExtResource("3_obtq6")

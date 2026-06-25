@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt0cxa3uxuypq"]
+
+[ext_resource type="Script" uid="uid://736l12583x1m" path="res://Shader/Simulation/color_rect_simulation.gd" id="1_56cbw"]
+
+[node name="Simulation" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 642.0
+script = ExtResource("1_56cbw")

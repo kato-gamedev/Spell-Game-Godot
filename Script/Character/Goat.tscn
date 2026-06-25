@@ -1,0 +1,71 @@
+[gd_scene load_steps=12 format=3 uid="uid://dneutp6611xdw"]
+
+[ext_resource type="Script" uid="uid://0yhxh0wsj3ua" path="res://Script/Character/Enemy.gd" id="1_i5smm"]
+[ext_resource type="Script" uid="uid://b3iqy3uhtt2a0" path="res://Script/StatSystem/EnemyStat.gd" id="2_63lgi"]
+[ext_resource type="PackedScene" uid="uid://cutyp0cx581qs" path="res://Model/Goat/Goat.gltf" id="4_i5smm"]
+[ext_resource type="Script" uid="uid://btug78jr8xfha" path="res://ai/tasks/MoveToPlayer.gd" id="4_naoye"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lokct"]
+radius = 0.4638672
+height = 1.1137953
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_xa3kn"]
+var/player/name = &"player"
+var/player/type = 24
+var/player/hint = 0
+var/player/hint_string = ""
+
+[sub_resource type="BTAction" id="BTAction_5mx16"]
+script = ExtResource("4_naoye")
+
+[sub_resource type="BTSequence" id="BTSequence_jlmmg"]
+children = [SubResource("BTAction_5mx16")]
+
+[sub_resource type="BehaviorTree" id="BehaviorTree_3nr4d"]
+blackboard_plan = SubResource("BlackboardPlan_xa3kn")
+root_task = SubResource("BTSequence_jlmmg")
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_4pqve"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ei5g4"]
+radius = 0.5805664
+height = 1.342392
+
+[node name="Enemy" type="CharacterBody3D"]
+collision_layer = 13
+script = ExtResource("1_i5smm")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(0.13, 0, 0, 0, 0.13, 0, 0, 0, 0.13, 0, 2.4087014, 0)
+billboard = 1
+fixed_size = true
+text = "difficulty"
+
+[node name="EnemyStat" type="Node" parent="."]
+script = ExtResource("2_63lgi")
+metadata/_custom_type_script = "uid://b3iqy3uhtt2a0"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="BodyCollision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.0066947937, 0.47081923, 0)
+shape = SubResource("CapsuleShape3D_lokct")
+
+[node name="BTPlayer" type="BTPlayer" parent="."]
+behavior_tree = SubResource("BehaviorTree_3nr4d")
+blackboard_plan = SubResource("BlackboardPlan_4pqve")
+
+[node name="DamageArea" type="Area3D" parent="."]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 0.022860212, 0, -0.017395332)
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DamageArea"]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.030732155, 0.59123373, 0)
+shape = SubResource("CapsuleShape3D_ei5g4")
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("4_i5smm")]
+transform = Transform3D(2.5571161e-08, 0, -0.195, 0, 0.195, 0, 0.195, 0, 2.5571161e-08, 0.017395334, 0.62736934, 0.022860214)
+
+[connection signal="died" from="EnemyStat" to="." method="_on_enemy_stat_died"]
+[connection signal="body_entered" from="DamageArea" to="." method="_on_damage_area_body_entered"]

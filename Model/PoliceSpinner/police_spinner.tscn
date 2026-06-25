@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1q51nqbqpnmv"]
+
+[ext_resource type="Script" uid="uid://6e0utf4b4e1h" path="res://Model/PoliceSpinner/FlyingCar.gd" id="1_76y3a"]
+[ext_resource type="PackedScene" uid="uid://bklt0jga6en1m" path="res://Model/PoliceSpinner/scene.gltf" id="1_wcoga"]
+[ext_resource type="Script" uid="uid://ds7eclfvcvqju" path="res://Script/Interact/Interactable.gd" id="2_76y3a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_obles"]
+size = Vector3(2.8115234, 1.7574463, 8.452789)
+
+[node name="PoliceSpinner" type="CharacterBody3D"]
+script = ExtResource("1_76y3a")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1305542, 0.28987122)
+shape = SubResource("BoxShape3D_obles")
+
+[node name="CarMesh" parent="." instance=ExtResource("1_wcoga")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CarMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.77041614, 0.29088283, -0.23627357)
+light_energy = 0.448
+omni_range = 66.085
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="CarMesh"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6156523, 0.29088283, -0.23627357)
+light_energy = 0.448
+omni_range = 66.085
+
+[node name="Interactable" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("2_76y3a")
+metadata/_custom_type_script = "uid://ds7eclfvcvqju"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1305542, -0.99923706)
+shape = SubResource("BoxShape3D_obles")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(-1.5, 7.045834e-08, -1.10597426e-07, 0, 1.2650871, 0.80594945, 1.3113416e-07, 0.80594945, -1.2650871, 0, 2.776, -5.574)
+spring_length = 0.0
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+fov = 82.1
+
+[node name="ExitPoint" type="Marker3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 1.578838, 0, 0)
+
+[connection signal="interacted" from="Interactable" to="." method="_on_interactable_interacted"]

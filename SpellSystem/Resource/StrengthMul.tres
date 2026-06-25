@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="StrengthMul" load_steps=3 format=3 uid="uid://b2cbb4cxi4x4v"]
+
+[ext_resource type="Texture2D" uid="uid://bkt6d40l04ysq" path="res://SpellSystem/Icon/Strength mul.png" id="1_4g0je"]
+[ext_resource type="Script" uid="uid://qb84a57iq33k" path="res://SpellSystem/Spell/StrengthMul.gd" id="1_vmaex"]
+
+[resource]
+script = ExtResource("1_vmaex")
+multiplier = 2.0
+SPELL_NAME = "Strength Mul"
+SPELL_TYPE = 2
+icon = ExtResource("1_4g0je")
+metadata/_custom_type_script = "uid://qb84a57iq33k"

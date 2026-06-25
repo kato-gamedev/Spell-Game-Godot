@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlw2xvl8eobrq"]
+
+[ext_resource type="Texture2D" uid="uid://cp1kk2tnv3efc" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="1_3s1ua"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3s1ua"]
+albedo_texture = ExtResource("1_3s1ua")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="PrototypeBox" type="CSGBox3D"]
+material = SubResource("StandardMaterial3D_3s1ua")

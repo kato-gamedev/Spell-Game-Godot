@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cc1xjwswgiwy1"]
+
+[ext_resource type="Shader" uid="uid://cil5lhhshd3gd" path="res://Shader/UIOutline.gdshader" id="1_tmfam"]
+[ext_resource type="Script" uid="uid://b8a2q4diu4wru" path="res://Script/Map/MapRoomVisual2.gd" id="1_xsq3q"]
+[ext_resource type="Texture2D" uid="uid://cgubjoufu3ls2" path="res://Script/Map/Icon/campfire.png" id="2_tmfam"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0hy4d"]
+shader = ExtResource("1_tmfam")
+shader_parameter/OutlineColor = Color(1, 0, 0.016666412, 1)
+shader_parameter/OutlineWidth = 10.0
+shader_parameter/IsHovered = false
+shader_parameter/PaddingScale = 1.2
+shader_parameter/BlackThreshold = 0.1
+
+[node name="MapRoomVisual2" type="TextureRect"]
+material = SubResource("ShaderMaterial_0hy4d")
+offset_right = 50.0
+offset_bottom = 50.0
+texture = ExtResource("2_tmfam")
+expand_mode = 1
+script = ExtResource("1_xsq3q")

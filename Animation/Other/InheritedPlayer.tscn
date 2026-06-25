@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cceudskdckow3"]
+
+[ext_resource type="PackedScene" uid="uid://c6fp5n3uh5y08" path="res://Animation/Other/AnimationLibrary_Godot_Standard.glb" id="1_flaa5"]
+
+[node name="AnimationLibrary_Godot_Standard" instance=ExtResource("1_flaa5")]

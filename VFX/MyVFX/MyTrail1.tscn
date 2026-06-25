@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=3 uid="uid://dt8tnso4j14nb"]
+
+[ext_resource type="Script" uid="uid://dsh68pj4rqmbn" path="res://VFX/MyVFX/MyTrail1.gd" id="1_6his7"]
+
+[sub_resource type="Curve" id="Curve_vgfvd"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_57us1"]
+curve = SubResource("Curve_vgfvd")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8l5ur"]
+emission_shape = 1
+emission_sphere_radius = 0.1
+inherit_velocity_ratio = -0.7
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_57us1")
+
+[sub_resource type="Gradient" id="Gradient_6his7"]
+interpolation_mode = 1
+colors = PackedColorArray(1, 1, 1, 0.6, 0.5415616, 0.5415616, 0.5415616, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vgfvd"]
+gradient = SubResource("Gradient_6his7")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwqev"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.59771997, 0.23119998, 0.68, 1)
+albedo_texture = SubResource("GradientTexture2D_vgfvd")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+stencil_flags = 2
+stencil_reference = 10
+
+[sub_resource type="QuadMesh" id="QuadMesh_s8ij2"]
+material = SubResource("StandardMaterial3D_hwqev")
+size = Vector2(0.2, 0.2)
+
+[sub_resource type="Curve" id="Curve_6his7"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vgfvd"]
+curve = SubResource("Curve_6his7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_s8ij2"]
+particle_flag_align_y = true
+emission_shape = 1
+emission_sphere_radius = 0.1
+inherit_velocity_ratio = -0.7
+spread = 0.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_vgfvd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6his7"]
+shading_mode = 0
+albedo_color = Color(1, 0.07999998, 0.07999998, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_vgfvd"]
+material = SubResource("StandardMaterial3D_6his7")
+radius = 0.05
+height = 0.1
+radial_segments = 8
+rings = 4
+
+[node name="MyTrail1" type="Node3D"]
+script = ExtResource("1_6his7")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 100000
+lifetime = 0.6
+fixed_fps = 120
+process_material = SubResource("ParticleProcessMaterial_8l5ur")
+draw_pass_1 = SubResource("QuadMesh_s8ij2")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+visible = false
+emitting = false
+amount = 1000
+lifetime = 0.6
+fixed_fps = 120
+process_material = SubResource("ParticleProcessMaterial_s8ij2")
+draw_pass_1 = SubResource("SphereMesh_vgfvd")

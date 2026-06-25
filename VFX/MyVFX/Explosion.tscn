@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://df8vysnwaimb3"]
+
+[ext_resource type="RibbonTrailMesh" uid="uid://5oguc3ldnpxo" path="res://VFX/MyVFX/ribbon1.tres" id="1_f65jx"]
+
+[sub_resource type="Gradient" id="Gradient_ku0uh"]
+offsets = PackedFloat32Array(0, 0.24705882, 0.5352941, 0.7970588, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.8815533, 0.8133162, 0.17363274, 1, 0.9905848, 0.6475457, 0.03794898, 1, 0.8244128, 0.17587185, 0.039163705, 1, 1, 0.42896897, 0.3602715, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_170t8"]
+gradient = SubResource("Gradient_ku0uh")
+
+[sub_resource type="Curve" id="Curve_8ftas"]
+_data = [Vector2(0, 0), 0.0, 0.09691122, 0, 0, Vector2(1, 0.9827899), 3.5437067, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_pnm4s"]
+curve = SubResource("Curve_8ftas")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_puq7m"]
+emission_shape = 1
+emission_sphere_radius = 0.5
+direction = Vector3(0, 0, 0)
+spread = 180.0
+initial_velocity_min = 15.0
+initial_velocity_max = 20.0
+angular_velocity_min = -1.6093254e-05
+angular_velocity_max = -1.6093254e-05
+damping_min = 20.0
+damping_max = 30.000002
+damping_curve = SubResource("CurveTexture_pnm4s")
+color_ramp = SubResource("GradientTexture1D_170t8")
+
+[node name="Explosion3D" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07956505, 0, 0)
+amount = 500
+lifetime = 1.5
+explosiveness = 1.0
+trail_enabled = true
+trail_lifetime = 0.01
+process_material = SubResource("ParticleProcessMaterial_puq7m")
+draw_pass_1 = ExtResource("1_f65jx")

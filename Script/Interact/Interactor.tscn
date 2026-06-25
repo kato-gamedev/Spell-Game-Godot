@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2mvy2rvgam43"]
+
+[ext_resource type="Script" uid="uid://4y63iywvfou2" path="res://Script/Interact/Interactor.gd" id="1_ue4y1"]
+
+[node name="Interactor" type="ShapeCast3D"]
+script = ExtResource("1_ue4y1")
+LABEL_OFFSET_Y = 0.0
+metadata/_custom_type_script = "uid://4y63iywvfou2"
+
+[node name="InteractLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhgv2ink4hkwx"]
+
+[ext_resource type="Texture2D" uid="uid://by74byt256wqq" path="res://Model/PSX Textures I/256/Color Maps/concrete_1.png" id="1_t7pbt"]
+[ext_resource type="Texture2D" uid="uid://b2mo3t7s64p0p" path="res://Model/PSX Textures I/256/Normal Maps/concrete_1_normal.png" id="2_d8pmb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5kwg"]
+albedo_texture = ExtResource("1_t7pbt")
+normal_enabled = true
+normal_texture = ExtResource("2_d8pmb")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_01loc"]
+material = SubResource("StandardMaterial3D_f5kwg")
+size = Vector2(4, 4)
+
+[node name="Floor" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_01loc")
