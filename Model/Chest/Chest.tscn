@@ -1,0 +1,211 @@
+[gd_scene load_steps=13 format=4 uid="uid://boypfntjfsopm"]
+
+[ext_resource type="Texture2D" uid="uid://weidoa7q7b4y" path="res://Model/Chest/Chest to godot_Image_0.png" id="1_psg6g"]
+[ext_resource type="Texture2D" uid="uid://cuyt32l8i67mx" path="res://Model/Chest/Chest to godot_Image_1.png" id="2_1ux48"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vpqx4"]
+resource_name = "Material_0.001"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_psg6g")
+texture_filter = 2
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dlb1f"]
+_surfaces = [{
+"aabb": AABB(-0.51573, -0.154619, -0.257994, 1.163429, 0.398973, 0.517545),
+"format": 34359742465,
+"index_count": 126,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQABQADAAAABQAAAAIABgABAAMABQAGAAMABgAEAAEABQACAAcAAgAEAAcACAAGAAUABwAEAAkACAAKAAYABwAJAAsACwAJAAkACwAJAAsADAAIAAsADQAIAAwADQAKAAgADAALAA4ADwAMAA4ADQAMAA8ADwAOABAADQAPABAACwAOABAACwAQABEADQAQABEAEQAJAAsADQASAAoAEQASAA0ACgASABMACgATABQAFQAUABMAFgAKABQAFQAWABQAFgAJAAoAFwAVABYAFwAWAAkAEQAXABIAEQAXAAkAEQAXABcAEQAXABEA"),
+"name": "Material_0.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("UmMaP7PQ7r24sF6+YTXmvlkz8r2t+VE+YTXmvlkz8r24sF6+UmMaP7PQ7r2t+VE+bXDqvr2obT6t+VE+UmMaPziBeT64sF6+UmMaPziBeT6t+VE+bXDqvr2obT64sF6+ms8lPziBeT64sF6+4gYEvyALcT6t+VE+ms8lPziBeT6t+VE+4gYEvyALcT64sF6+rYokPypwcj7KF4S+rYokP3FUHr64sF6+SS4Dvypwcj7KF4S+rYokP3FUHr7KF4S+SS4Dv3FUHr7KF4S+SS4Dv3FUHr64sF6+rYokP3FUHr6t+VE+nYElP3FUHr4lPIE+nYElP+83ej4lPIE+SS4Dv3FUHr7e44Q+SS4Dv+83ej7e44Q+SS4Dv3FUHr6t+VE+")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2to61"]
+resource_name = "Chest to godot_Mesh_0_001"
+_surfaces = [{
+"aabb": AABB(-0.51573, -0.154619, -0.257994, 1.163429, 0.398973, 0.517545),
+"attribute_data": PackedByteArray("AACgPgAAAAAAANg+AACIPgAAoD4AAIg+AADYPgAAAABxvQo/E4kBP5Zl3z50FtA+cb0KP3QW0D6WZd8+E4kBP6r4Cj8UEcM+CNzfPrwkkT6q+Ao/vCSRPgjc3z4UEcM+AAAMPwAASD4AAOA+AADgPQAADD8AAOA9AADgPgAASD4AAAA8AAAAPwAAAAAAABw/AAAAAAAAAD8AAAA8AAAcPwAAAAAAAAAAAAAAAAAA4D0Xt1E4AAAAAAAAAAAAAOA9AAAMPwAAiD4AAOA+AACAPgAADD8AAIA+AADgPgAAiD4AAOA+AAAAAAAADD8AAMA9AADgPgAAwD0AAAw/AAAAALu4DTlQQNs9Se6TPgDIujpJ7pM+UEDbPbu4DTkAyLo6AAAAAAAAAAAAAAAAAADgPRe3UTgAAAAAAAAAAAAA4D0AAAAAAAC8PgAAlD4AAIg+AACUPgAAvD4AAAAAAACIPknukz5QQNs9u7gNOQAA8D27uA05UEDbPUnukz4AAPA9AAAAAAAAeD4AAJQ+AAAQPgAAlD4AAHg+AAAAAAAAED5xvQo/E4kBP2dVDT+S+dA+Z1UNPxOJAT9xvQo/ehfQPtjnhz4AAMg+hrapOora9D6gQUE5AADIPiFnhz5iHPY+oOk6PwAAYD5YiuE+FGFqPq724T4AAGA+1Do7PwxPaj6WZd8+dBbQPkxZ2T7OiAE/MVXZPgAA0D6WZd8+kIgBPwjc3z4UEcM+v97YPgAAkD4I3N8+vCSRPqjl2D4AEcM+qvgKP7wkkT6hkA0/FBHDPqr4Cj8UEcM+oZANPx75kD6JDs8+AACQPnfxoD6+aAs/d/GgPpISkD4mys0+FucLP+JZmz4OI0Y/HqaQPgAA+D5xtpY+AAD4PuJZmz4OI0Y/cF+UPqlvRj8eppA+AAD4Pg=="),
+"format": 34359742487,
+"index_count": 126,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUwBUAFUA"),
+"material": SubResource("StandardMaterial3D_vpqx4"),
+"name": "Material_0.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 86,
+"vertex_data": PackedByteArray("UmMaP7PQ7r24sF6+YTXmvlkz8r2t+VE+YTXmvlkz8r24sF6+UmMaP7PQ7r2t+VE+rYokP3FUHr64sF6+ms8lPziBeT6t+VE+ms8lPziBeT64sF6+rYokP3FUHr6t+VE+SS4Dv3FUHr64sF6+4gYEvyALcT6t+VE+4gYEvyALcT64sF6+SS4Dv3FUHr6t+VE+YTXmvlkz8r24sF6+bXDqvr2obT6t+VE+bXDqvr2obT64sF6+YTXmvlkz8r2t+VE+ms8lPziBeT64sF6+UmMaPziBeT6t+VE+UmMaPziBeT64sF6+ms8lPziBeT6t+VE+SS4Dv3FUHr64sF6+SS4Dv3FUHr6t+VE+SS4Dv3FUHr64sF6+SS4Dv3FUHr6t+VE+bXDqvr2obT64sF6+4gYEvyALcT6t+VE+4gYEvyALcT64sF6+bXDqvr2obT6t+VE+UmMaPziBeT64sF6+UmMaP7PQ7r2t+VE+UmMaP7PQ7r24sF6+UmMaPziBeT6t+VE+SS4Dv3FUHr64sF6+rYokP3FUHr6t+VE+rYokP3FUHr64sF6+SS4Dv3FUHr6t+VE+4gYEvyALcT64sF6+4gYEvyALcT6t+VE+4gYEvyALcT64sF6+4gYEvyALcT6t+VE+SS4Dv3FUHr7e44Q+nYElP+83ej4lPIE+nYElP3FUHr4lPIE+SS4Dv+83ej7e44Q+rYokP3FUHr64sF6+SS4Dv3FUHr7KF4S+SS4Dv3FUHr64sF6+rYokP3FUHr7KF4S+rYokP3FUHr7KF4S+SS4Dvypwcj7KF4S+SS4Dv3FUHr7KF4S+rYokPypwcj7KF4S+rYokP3FUHr64sF6+rYokPypwcj7KF4S+rYokP3FUHr7KF4S+ms8lPziBeT64sF6+UmMaPziBeT64sF6+YTXmvlkz8r24sF6+bXDqvr2obT64sF6+UmMaP7PQ7r24sF6+rYokPypwcj7KF4S+4gYEvyALcT64sF6+SS4Dvypwcj7KF4S+ms8lPziBeT64sF6+ms8lPziBeT6t+VE+nYElP3FUHr4lPIE+nYElP+83ej4lPIE+rYokP3FUHr6t+VE+SS4Dv3FUHr6t+VE+SS4Dv+83ej7e44Q+4gYEvyALcT6t+VE+SS4Dv3FUHr7e44Q+4gYEvyALcT64sF6+SS4Dv3FUHr7KF4S+SS4Dv3FUHr64sF6+SS4Dvypwcj7KF4S+UmMaPziBeT6t+VE+YTXmvlkz8r2t+VE+UmMaP7PQ7r2t+VE+bXDqvr2obT6t+VE+SS4Dv+83ej7e44Q+ms8lPziBeT6t+VE+nYElP+83ej4lPIE+SS4Dv+83ej7e44Q+4gYEvyALcT6t+VE+ms8lPziBeT6t+VE+y3/K//9//7/Lf8r//3//v8t/yv//f/+/y3/K//9//79t/m5+/////23+bn7/////bf5ufv////9t/m5+/////+r+E4H/////6v4Tgf/////q/hOBAQD+/+r+E4H/////C/3zgv////8L/fOC/////wv984L/////C/3zgv//////f///////v/9///////+//3///////7//f///////v/9///////+//3///////7////9/////v////3////+/6YYV+f/////phhX5/////+mGFfn/////6YYV+f////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//3///////7//f///////v////3////+/////f////7/JgP9///9kwMmA/3///2TAyYD/f///ZMDJgP9///9kwP9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//////wAA/7//////AAD/v/////8AAP+//////wAA/7////9//v8AgP///3/+/wCA////f/////////9//v8AgP9//3+d/q/A/3//f53+r8D/f/9/nf6vwP9//3+d/q/A/3/V+////7//f9X7////v/9/1fv///+//3/V+////7/c/P9/9v+Qgdz8/3/1/5CB3Pz/f/f/kIHc/P9/9f+Qgfr+bogOALuD+v5uiA8Au4P6/m6IDwC7g/r+bogOALuD6v4TgQEA/v/q/hOB/////+r+E4H/////6v4TgQIA/v//////zH/l///////Mf+X//////8x/5f//////y3/l/yF++//nfObAIX77/+d85sAhfvv/53zmwB5++//ofOjAHILB/9986sAefvv/6HzowA==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dlb1f")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uw4wb"]
+resource_name = "Material_1.001"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("2_1ux48")
+texture_filter = 2
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dvk3t"]
+_surfaces = [{
+"aabb": AABB(-0.5813135, 0, -0.00023302436, 1.161653, 0.039593995, 0.5197151),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"name": "Material_1.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAnHf//AAA2ANfiAAAAAAAA///h/wAANgAAAB0AAAD//9fiAAAAAMj/Jx3//wAAyP///+H/AAD//wAAHQAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yt3fu"]
+resource_name = "Chest to godot_Mesh_1_001"
+_surfaces = [{
+"aabb": AABB(-0.5813135, 0, -0.00023302436, 1.161653, 0.039593995, 0.5197151),
+"attribute_data": PackedByteArray("/3HvM/9PwDH/cbAx/0//M/9J/1EAAP9P/0n/TwAA/1HXUP8pJ1P/BxZT/ynpUP8H/5n/Af9PAAD/mQAA/0//AeMA/yEcSwAAK0v/IdMAAADTAP9JK0v/JxxL/0njAP8n"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_uw4wb"),
+"name": "Material_1.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAnHf//E8A2ANfiAAATwAAA///h/xPANgAAAB0AE8A2AAAAHQD/////1+IAAP//NgDX4gAA/////wAAHQD/////AAAdACHVyP///+H/INX//9fiAAAh1cj/Jx3//yDVyP8nHf//RYAAAP//4f9FgMj////h/0WAAAAnHf//RYA2AAAAHQCkv8j/Jx3//6S///8AAB0ApL8AACcd//+kv///1+IAAP//AAD//+H///82ANfiAAD//8j////h////24CQ/9uAkP/bgJD/24CQ/2uA//9rgP//a4D//2uA///TKosq1CqLKtMqiyrUKosq////f////3////9/////fwAA/38AAP9/AAD/fwAA/3//f0bA/39GwP9/RsD/f0bA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dvk3t")
+
+[sub_resource type="Animation" id="Animation_pw5dj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chest to godot/ChestLid:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chest to godot/ChestLid:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.06695849, 0.239737, -0.260498)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Chest to godot/ChestBody:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6ah0o"]
+resource_name = "close"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chest to godot/ChestLid:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-2.0629792, 0, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_q2md0"]
+resource_name = "open"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chest to godot/ChestLid:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-2.0629792, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Chest to godot/ChestLid:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.06695849, 0.239737, -0.260498), Vector3(0.06695849, 0.3575111, -0.260498), Vector3(0.06695849, 0.24262387, -0.260498)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Chest to godot/ChestBody:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.1177741, 0), Vector3(0, 0.0028868914, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_60ebn"]
+_data = {
+&"RESET": SubResource("Animation_pw5dj"),
+&"close": SubResource("Animation_6ah0o"),
+&"open": SubResource("Animation_q2md0")
+}
+
+[node name="Chest" type="Node3D"]
+
+[node name="Chest to godot" type="Node3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.15743011, 0)
+
+[node name="ChestBody" type="MeshInstance3D" parent="Chest to godot"]
+mesh = SubResource("ArrayMesh_2to61")
+skeleton = NodePath("")
+
+[node name="ChestLid" type="MeshInstance3D" parent="Chest to godot"]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 0.9999999, 0.06695849, 0.239737, -0.260498)
+mesh = SubResource("ArrayMesh_yt3fu")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_60ebn")
+}
+autoplay = "open"
