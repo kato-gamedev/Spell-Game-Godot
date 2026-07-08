@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://brfgaaa6wr66o"]
+
+[ext_resource type="PackedScene" uid="uid://dlw2xvl8eobrq" path="res://Map/PrototypeBox.tscn" id="1_hxsi8"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hxsi8"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_alqi0"]
+sky_material = SubResource("ProceduralSkyMaterial_hxsi8")
+
+[sub_resource type="Environment" id="Environment_gjqsl"]
+background_mode = 2
+sky = SubResource("Sky_alqi0")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="MountainDeeps" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_gjqsl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="PrototypeBox" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0041504, 0, -29.549591)
+size = Vector3(84.7251, 1, 85.653015)
+
+[node name="PrototypeBox2" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(0.82780975, -0.48793882, 0.27685216, 0.5263885, 0.8462323, -0.082498536, -0.19402705, 0.21402486, 0.9573647, -11.906083, 5.631579, -1.7515535)
+size = Vector3(0.38061523, 11.266113, 29.684692)
+
+[node name="PrototypeBox3" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(0.82011193, 0.57220316, 0, -0.57220316, 0.82011193, 0, 0, 0, 1, 7.40256, 6.231605, -10.558281)
+size = Vector3(0.45483398, 14.810303, 42.346924)
+
+[node name="PrototypeBox6" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(-0.10562177, -0.14166635, 0.98426354, -0.578902, 0.813542, 0.054971933, -0.8085274, -0.5639859, -0.16793868, -10.718131, 5.4140677, -31.465183)
+size = Vector3(0.45483398, 14.810303, 42.346924)
+
+[node name="PrototypeBox4" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(0.9843805, 0, 0.17605399, 0, 1, 0, -0.17605399, 0, 0.9843805, -2.622798, 0.23510742, -2.6534934)
+size = Vector3(5.825348, 1.4702148, 22.856445)
+
+[node name="PrototypeBox5" parent="." instance=ExtResource("1_hxsi8")]
+transform = Transform3D(0.9924822, 0, -0.12238902, 0, 1, 0, 0.12238902, 0, 0.9924822, -2.511412, 0.23510838, -28.244436)
+size = Vector3(8.905884, 1.4702148, 30.411438)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.9925461, 0.03604675, -0.11641676, 0, 0.95525575, 0.29578102, 0.12186973, -0.2935763, 0.9481354, -5.2636824, 8.516194, 15.02277)
+fov = 80.3

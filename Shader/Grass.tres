@@ -1,0 +1,56 @@
+[gd_resource type="VisualShader" load_steps=5 format=3 uid="uid://76ct3dkpwo2j"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_8r4ro"]
+source = 5
+texture_type = 1
+
+[sub_resource type="VisualShaderNodeTexture2DParameter" id="VisualShaderNodeTexture2DParameter_4s2pu"]
+parameter_name = "Texture2DParameter"
+
+[sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_um5jl"]
+operator = 2
+
+[sub_resource type="VisualShaderNodeColorParameter" id="VisualShaderNodeColorParameter_x32j3"]
+parameter_name = "ColorParameter"
+default_value_enabled = true
+default_value = Color(0, 0, 0, 1)
+
+[resource]
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, depth_test_default, cull_back, diffuse_lambert, specular_schlick_ggx;
+
+uniform sampler2D Texture2DParameter;
+uniform vec4 ColorParameter : source_color = vec4(0.000000, 0.000000, 0.000000, 1.000000);
+
+
+
+void vertex() {
+	vec4 n_out4p0;
+// Texture2D:4
+	n_out4p0 = texture(Texture2DParameter, UV);
+
+
+// ColorParameter:8
+	vec4 n_out8p0 = ColorParameter;
+
+
+// FloatOp:7
+	float n_out7p0 = n_out4p0.x * n_out8p0.x;
+
+
+// Output:0
+	COLOR.rgb = vec3(n_out7p0);
+
+
+}
+"
+nodes/vertex/0/position = Vector2(420, 180)
+nodes/vertex/4/node = SubResource("VisualShaderNodeTexture_8r4ro")
+nodes/vertex/4/position = Vector2(-80, 300)
+nodes/vertex/5/node = SubResource("VisualShaderNodeTexture2DParameter_4s2pu")
+nodes/vertex/5/position = Vector2(-360, 200)
+nodes/vertex/7/node = SubResource("VisualShaderNodeFloatOp_um5jl")
+nodes/vertex/7/position = Vector2(160, 380)
+nodes/vertex/8/node = SubResource("VisualShaderNodeColorParameter_x32j3")
+nodes/vertex/8/position = Vector2(-120, 540)
+nodes/vertex/connections = PackedInt32Array(5, 0, 4, 2, 7, 0, 0, 6, 4, 0, 7, 0, 8, 0, 7, 1)
